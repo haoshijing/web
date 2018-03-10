@@ -1,0 +1,219 @@
+2018-03-10 20:30:06.209  INFO 12916 --- [main] com.hubei.web.admin.ApplicationStarter   : Starting ApplicationStarter on TC--20170820XLK with PID 12916 (D:\git\code\my\web\admin\target\classes started by Administrator in D:\git\code\my\web)
+2018-03-10 20:30:06.209  INFO 12916 --- [main] com.hubei.web.admin.ApplicationStarter   : The following profiles are active: dev
+2018-03-10 20:30:06.318  INFO 12916 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61710c6: startup date [Sat Mar 10 20:30:06 CST 2018]; root of context hierarchy
+2018-03-10 20:30:07.277  INFO 12916 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [application-context.xml]
+2018-03-10 20:30:07.715  WARN 12916 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubei.web.admin]' package. Please check your configuration.
+2018-03-10 20:30:07.778  INFO 12916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-10 20:30:08.199  WARN 12916 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [application_${env}.properties] cannot be opened because it does not exist
+2018-03-10 20:30:08.215  INFO 12916 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-03-10 20:30:08.246 ERROR 12916 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanInitializationException: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [application_${env}.properties] cannot be opened because it does not exist
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:148) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:283) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:163) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.hubei.web.admin.ApplicationStarter.main(ApplicationStarter.java:13) [classes/:na]
+Caused by: java.io.FileNotFoundException: class path resource [application_${env}.properties] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.core.io.support.EncodedResource.getInputStream(EncodedResource.java:154) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:98) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:177) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.core.io.support.PropertiesLoaderSupport.mergeProperties(PropertiesLoaderSupport.java:158) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:139) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 11 common frames omitted
+
+2018-03-10 20:30:20.022  INFO 11116 --- [main] com.hubei.web.admin.ApplicationStarter   : Starting ApplicationStarter on TC--20170820XLK with PID 11116 (D:\git\code\my\web\admin\target\classes started by Administrator in D:\git\code\my\web)
+2018-03-10 20:30:20.038  INFO 11116 --- [main] com.hubei.web.admin.ApplicationStarter   : The following profiles are active: dev
+2018-03-10 20:30:20.131  INFO 11116 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b58b9e9: startup date [Sat Mar 10 20:30:20 CST 2018]; root of context hierarchy
+2018-03-10 20:30:21.067  INFO 11116 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [application-context.xml]
+2018-03-10 20:30:21.411  WARN 11116 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubei.web.admin]' package. Please check your configuration.
+2018-03-10 20:30:21.457  INFO 11116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-10 20:30:21.989  INFO 11116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff9e9081] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 20:30:22.707  INFO 11116 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2018-03-10 20:30:22.739  INFO 11116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-10 20:30:22.739  INFO 11116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-03-10 20:30:22.928  INFO 11116 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring embedded WebApplicationContext
+2018-03-10 20:30:22.928  INFO 11116 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2797 ms
+2018-03-10 20:30:23.162  INFO 11116 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-10 20:30:23.162  INFO 11116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-10 20:30:23.162  INFO 11116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-10 20:30:23.162  INFO 11116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-10 20:30:23.162  INFO 11116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-10 20:30:23.365  INFO 11116 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-10 20:30:24.102  INFO 11116 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b58b9e9: startup date [Sat Mar 10 20:30:20 CST 2018]; root of context hierarchy
+2018-03-10 20:30:24.211  INFO 11116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.base.po.ContentPo>> com.hubei.web.admin.controller.ContentController.queryList(java.lang.String,java.lang.Integer)
+2018-03-10 20:30:24.211  INFO 11116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-10 20:30:24.211  INFO 11116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-10 20:30:24.258  INFO 11116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 20:30:24.258  INFO 11116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 20:30:24.289  INFO 11116 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandlerAdvice
+2018-03-10 20:30:24.320  INFO 11116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 20:30:25.149  INFO 11116 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b58b9e9: startup date [Sat Mar 10 20:30:20 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-03-10 20:30:25.149  INFO 11116 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-10 20:30:25.180  WARN 11116 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2018-03-10 20:30:25.571  INFO 11116 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-10 20:30:25.571  INFO 11116 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-10 20:30:25.571  INFO 11116 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-10 20:30:25.660  INFO 11116 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9000 (http)
+2018-03-10 20:30:25.660  INFO 11116 --- [main] com.hubei.web.admin.ApplicationStarter   : Started ApplicationStarter in 6.522 seconds (JVM running for 7.818)
+2018-03-10 20:31:00.737  INFO 11116 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-10 20:31:00.737  INFO 11116 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-10 20:31:00.774  INFO 11116 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2018-03-10 20:32:07.205  INFO 11528 --- [main] com.hubei.web.admin.ApplicationStarter   : Starting ApplicationStarter on TC--20170820XLK with PID 11528 (D:\git\code\my\web\admin\target\classes started by Administrator in D:\git\code\my\web)
+2018-03-10 20:32:07.221  INFO 11528 --- [main] com.hubei.web.admin.ApplicationStarter   : The following profiles are active: dev
+2018-03-10 20:32:07.330  INFO 11528 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1787bc24: startup date [Sat Mar 10 20:32:07 CST 2018]; root of context hierarchy
+2018-03-10 20:32:08.624  INFO 11528 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [application-context.xml]
+2018-03-10 20:32:09.017  WARN 11528 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubei.web.admin]' package. Please check your configuration.
+2018-03-10 20:32:09.076  INFO 11528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-10 20:32:09.644  INFO 11528 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6648d466] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 20:32:10.281  INFO 11528 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2018-03-10 20:32:10.298  INFO 11528 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-10 20:32:10.299  INFO 11528 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-03-10 20:32:10.446  INFO 11528 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring embedded WebApplicationContext
+2018-03-10 20:32:10.446  INFO 11528 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3132 ms
+2018-03-10 20:32:10.693  INFO 11528 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-10 20:32:10.699  INFO 11528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-10 20:32:10.700  INFO 11528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-10 20:32:10.700  INFO 11528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-10 20:32:10.700  INFO 11528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-10 20:32:10.892  INFO 11528 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-10 20:32:11.620  INFO 11528 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1787bc24: startup date [Sat Mar 10 20:32:07 CST 2018]; root of context hierarchy
+2018-03-10 20:32:11.716  INFO 11528 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.base.po.ContentPo>> com.hubei.web.admin.controller.ContentController.queryList(java.lang.String,java.lang.Integer)
+2018-03-10 20:32:11.720  INFO 11528 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-10 20:32:11.721  INFO 11528 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-10 20:32:11.772  INFO 11528 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 20:32:11.773  INFO 11528 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 20:32:11.807  INFO 11528 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandlerAdvice
+2018-03-10 20:32:11.861  INFO 11528 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 20:32:12.670  INFO 11528 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1787bc24: startup date [Sat Mar 10 20:32:07 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-03-10 20:32:12.686  INFO 11528 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-10 20:32:12.701  WARN 11528 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2018-03-10 20:32:13.063  INFO 11528 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-10 20:32:13.063  INFO 11528 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-10 20:32:13.063  INFO 11528 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-10 20:32:13.141  INFO 11528 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9000 (http)
+2018-03-10 20:32:13.141  INFO 11528 --- [main] com.hubei.web.admin.ApplicationStarter   : Started ApplicationStarter in 6.537 seconds (JVM running for 7.847)
+2018-03-10 20:32:13.537  INFO 11528 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-10 20:32:13.537  INFO 11528 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-10 20:32:13.572  INFO 11528 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2018-03-10 20:32:38.807  INFO 12248 --- [main] com.hubei.web.admin.ApplicationStarter   : Starting ApplicationStarter on TC--20170820XLK with PID 12248 (D:\git\code\my\web\admin\target\classes started by Administrator in D:\git\code\my\web)
+2018-03-10 20:32:38.807  INFO 12248 --- [main] com.hubei.web.admin.ApplicationStarter   : The following profiles are active: dev
+2018-03-10 20:32:38.916  INFO 12248 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b58b9e9: startup date [Sat Mar 10 20:32:38 CST 2018]; root of context hierarchy
+2018-03-10 20:32:40.023  INFO 12248 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [application-context.xml]
+2018-03-10 20:32:40.351  WARN 12248 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubei.web.admin]' package. Please check your configuration.
+2018-03-10 20:32:40.398  INFO 12248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-10 20:32:40.915  INFO 12248 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$31723b68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 20:32:41.483  INFO 12248 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2018-03-10 20:32:41.498  INFO 12248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-10 20:32:41.498  INFO 12248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-03-10 20:32:41.624  INFO 12248 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring embedded WebApplicationContext
+2018-03-10 20:32:41.640  INFO 12248 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2724 ms
+2018-03-10 20:32:41.860  INFO 12248 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-10 20:32:41.860  INFO 12248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-10 20:32:41.860  INFO 12248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-10 20:32:41.860  INFO 12248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-10 20:32:41.860  INFO 12248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-10 20:32:42.047  INFO 12248 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-10 20:32:42.688  INFO 12248 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b58b9e9: startup date [Sat Mar 10 20:32:38 CST 2018]; root of context hierarchy
+2018-03-10 20:32:42.797  INFO 12248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.base.po.ContentPo>> com.hubei.web.admin.controller.ContentController.queryList(java.lang.String,java.lang.Integer)
+2018-03-10 20:32:42.797  INFO 12248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-10 20:32:42.797  INFO 12248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-10 20:32:42.856  INFO 12248 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 20:32:42.857  INFO 12248 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 20:32:42.876  INFO 12248 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandlerAdvice
+2018-03-10 20:32:42.923  INFO 12248 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 20:32:43.549  INFO 12248 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b58b9e9: startup date [Sat Mar 10 20:32:38 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-03-10 20:32:43.549  INFO 12248 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-10 20:32:43.580  WARN 12248 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2018-03-10 20:32:43.961  INFO 12248 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-10 20:32:43.961  INFO 12248 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-10 20:32:43.961  INFO 12248 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-10 20:32:44.039  INFO 12248 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9000 (http)
+2018-03-10 20:32:44.039  INFO 12248 --- [main] com.hubei.web.admin.ApplicationStarter   : Started ApplicationStarter in 5.887 seconds (JVM running for 7.151)
+2018-03-10 20:32:47.392  INFO 12248 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-10 20:32:47.392  INFO 12248 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-10 20:32:47.425  INFO 12248 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-03-10 20:33:24.714  INFO 3364 --- [main] com.hubei.web.admin.ApplicationStarter   : Starting ApplicationStarter on TC--20170820XLK with PID 3364 (D:\git\code\my\web\admin\target\classes started by Administrator in D:\git\code\my\web)
+2018-03-10 20:33:24.714  INFO 3364 --- [main] com.hubei.web.admin.ApplicationStarter   : The following profiles are active: dev
+2018-03-10 20:33:24.776  INFO 3364 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b58b9e9: startup date [Sat Mar 10 20:33:24 CST 2018]; root of context hierarchy
+2018-03-10 20:33:25.473  INFO 3364 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [application-context.xml]
+2018-03-10 20:33:25.848  WARN 3364 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubei.web.admin]' package. Please check your configuration.
+2018-03-10 20:33:25.895  INFO 3364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-10 20:33:26.448  INFO 3364 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$57f0804d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 20:33:27.010  INFO 3364 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2018-03-10 20:33:27.026  INFO 3364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-10 20:33:27.026  INFO 3364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-03-10 20:33:27.170  INFO 3364 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring embedded WebApplicationContext
+2018-03-10 20:33:27.170  INFO 3364 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2394 ms
+2018-03-10 20:33:27.390  INFO 3364 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-10 20:33:27.390  INFO 3364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-10 20:33:27.390  INFO 3364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-10 20:33:27.390  INFO 3364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-10 20:33:27.390  INFO 3364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-10 20:33:27.562  INFO 3364 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-10 20:33:28.250  INFO 3364 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b58b9e9: startup date [Sat Mar 10 20:33:24 CST 2018]; root of context hierarchy
+2018-03-10 20:33:28.328  INFO 3364 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.base.po.ContentPo>> com.hubei.web.admin.controller.ContentController.queryList(java.lang.String,java.lang.Integer)
+2018-03-10 20:33:28.343  INFO 3364 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-10 20:33:28.343  INFO 3364 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-10 20:33:28.381  INFO 3364 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 20:33:28.381  INFO 3364 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 20:33:28.412  INFO 3364 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandlerAdvice
+2018-03-10 20:33:28.443  INFO 3364 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 20:33:29.176  INFO 3364 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b58b9e9: startup date [Sat Mar 10 20:33:24 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-03-10 20:33:29.176  INFO 3364 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-10 20:33:29.223  WARN 3364 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2018-03-10 20:33:29.599  INFO 3364 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-10 20:33:29.599  INFO 3364 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-10 20:33:29.599  INFO 3364 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-10 20:33:29.677  INFO 3364 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9000 (http)
+2018-03-10 20:33:29.677  INFO 3364 --- [main] com.hubei.web.admin.ApplicationStarter   : Started ApplicationStarter in 5.339 seconds (JVM running for 7.569)
+2018-03-10 20:33:32.778  INFO 3364 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-10 20:33:32.779  INFO 3364 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-10 20:33:32.814  INFO 3364 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2018-03-10 20:36:58.457  INFO 10124 --- [main] com.hubei.web.admin.ApplicationStarter   : Starting ApplicationStarter on TC--20170820XLK with PID 10124 (D:\git\code\my\web\admin\target\classes started by Administrator in D:\git\code\my\web)
+2018-03-10 20:36:58.457  INFO 10124 --- [main] com.hubei.web.admin.ApplicationStarter   : The following profiles are active: dev
+2018-03-10 20:36:58.597  INFO 10124 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a37d3ed: startup date [Sat Mar 10 20:36:58 CST 2018]; root of context hierarchy
+2018-03-10 20:36:59.618  INFO 10124 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [application-context.xml]
+2018-03-10 20:36:59.938  WARN 10124 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubei.web.admin]' package. Please check your configuration.
+2018-03-10 20:36:59.985  INFO 10124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-10 20:37:00.663  INFO 10124 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1db6389] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 20:37:01.222  INFO 10124 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2018-03-10 20:37:01.238  INFO 10124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-10 20:37:01.238  INFO 10124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-03-10 20:37:01.378  INFO 10124 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring embedded WebApplicationContext
+2018-03-10 20:37:01.378  INFO 10124 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2781 ms
+2018-03-10 20:37:01.628  INFO 10124 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-10 20:37:01.628  INFO 10124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-10 20:37:01.628  INFO 10124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-10 20:37:01.628  INFO 10124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-10 20:37:01.628  INFO 10124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-10 20:37:01.802  INFO 10124 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-10 20:37:02.474  INFO 10124 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a37d3ed: startup date [Sat Mar 10 20:36:58 CST 2018]; root of context hierarchy
+2018-03-10 20:37:02.552  INFO 10124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.base.po.ContentPo>> com.hubei.web.admin.controller.ContentController.queryList(java.lang.String,java.lang.Integer)
+2018-03-10 20:37:02.568  INFO 10124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-10 20:37:02.568  INFO 10124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-10 20:37:02.615  INFO 10124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 20:37:02.615  INFO 10124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 20:37:02.646  INFO 10124 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandlerAdvice
+2018-03-10 20:37:02.682  INFO 10124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 20:37:03.466  INFO 10124 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a37d3ed: startup date [Sat Mar 10 20:36:58 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-03-10 20:37:03.468  INFO 10124 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-10 20:37:03.506  WARN 10124 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2018-03-10 20:37:03.892  INFO 10124 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-10 20:37:03.894  INFO 10124 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-10 20:37:03.904  INFO 10124 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-10 20:37:03.980  INFO 10124 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9000 (http)
+2018-03-10 20:37:03.988  INFO 10124 --- [main] com.hubei.web.admin.ApplicationStarter   : Started ApplicationStarter in 6.125 seconds (JVM running for 7.45)
+2018-03-10 20:37:07.299  INFO 10124 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-10 20:37:07.300  INFO 10124 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-10 20:37:07.337  INFO 10124 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hubei.base.mapper.impl.MenuMapper">
+    <sql id="all_columns">
+        *
+    </sql>
+    <sql id = "tableName">
+        t_menu
+    </sql>
+
+    <insert id="insert" parameterType="MenuPo">
+        INSERT INTO <include refid="tableName"/>
+        (
+        menuName,
+        parentId,
+        sort,
+        status,
+        insertTime,
+        lastUpdateTime
+        )
+        VALUES
+        (
+        #{menuName},
+        #{parentId},
+        #{sort},
+        #{status},
+        #{insertTime},
+        #{lastUpdateTime}
+        )
+    </insert>
+
+
+</mapper>
