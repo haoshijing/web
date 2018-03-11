@@ -41,6 +41,7 @@ public class LoginController {
         if(check){
             String token = UUID.randomUUID().toString().replace("-","");
             loginResponse.setToken(token);
+            loginResponse.setSucc(true);
             adminAuthInfo.setToken(token);
             adminAuthInfo.setUserName(loginDataRequest.getName());
             adminAuthCacheService.setTokenCache(token,adminAuthInfo);

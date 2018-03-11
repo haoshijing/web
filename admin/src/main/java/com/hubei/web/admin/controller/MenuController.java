@@ -7,6 +7,7 @@ import com.hubei.base.mapper.impl.MenuMapper;
 import com.hubei.base.po.ContentPo;
 import com.hubei.base.po.MenuPo;
 import com.hubei.web.admin.controller.request.ContentQueryVo;
+import com.hubei.web.admin.controller.request.MenuInsertRequest;
 import com.hubei.web.admin.controller.request.MenuQueryVo;
 import com.hubei.web.admin.controller.response.MenuVo;
 import com.hubei.web.admin.service.MenuService;
@@ -31,6 +32,19 @@ public class MenuController {
         }
         List<MenuVo> menuPos = menuService.selectList(menuQueryVo);
         return new ApiResponse<>(menuPos);
+    }
+
+    @RequestMapping("/selectCount")
+    public ApiResponse<Integer> selectCount(@RequestBody MenuQueryVo menuQueryVo){
+        if(!checkParamsValid(menuQueryVo)){
+            return new ApiResponse<>(RetCode.PARAM_EROR,"参数有误");
+        }
+        Integer count = menuService.selectCount(menuQueryVo);
+        return new ApiResponse<>(count);
+    }
+    public ApiResponse<Integer> insertMenu(@RequestBody MenuInsertRequest request){
+        Integer result =  menuService.insertMenu(request);
+        return new ApiResponse<>(result);
     }
 
     private boolean checkParamsValid(MenuQueryVo menuQueryVo){

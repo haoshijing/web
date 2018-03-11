@@ -3,6 +3,7 @@ package com.hubei.web.admin.service;
 import com.hubei.base.mapper.impl.MenuMapper;
 import com.hubei.base.po.ContentPo;
 import com.hubei.base.po.MenuPo;
+import com.hubei.web.admin.controller.request.MenuInsertRequest;
 import com.hubei.web.admin.controller.request.MenuQueryVo;
 import com.hubei.web.admin.controller.response.MenuVo;
 import org.springframework.beans.BeanUtils;
@@ -21,6 +22,7 @@ public class MenuService {
 
     @Autowired
     MenuMapper menuMapper;
+
     public List<MenuVo> selectList(MenuQueryVo contentQueryVo){
         Integer page = contentQueryVo.getPage();
         if(page == 0){
@@ -42,5 +44,13 @@ public class MenuService {
             }
             return  menuVo;
         }).collect(Collectors.toList());
+    }
+
+    public Integer selectCount(MenuQueryVo menuQueryVo) {
+        return menuMapper.selectCount(new MenuPo());
+    }
+
+    public Integer insertMenu(MenuInsertRequest request) {
+        return 0;
     }
 }
