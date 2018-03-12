@@ -62,4 +62,9 @@
         </where>
     </select>
 
+    <select id = "selectById" resultType="ContentPo">
+        select  <include refid="all_columns"/>
+        FROM <include refid="tableName"/>
+        where id = #{id}
+    </select>
 </mapper>
