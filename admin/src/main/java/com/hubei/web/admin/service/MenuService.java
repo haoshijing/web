@@ -1,5 +1,6 @@
 package com.hubei.web.admin.service;
 
+import com.hubei.base.enums.Status;
 import com.hubei.base.mapper.impl.MenuMapper;
 import com.hubei.base.po.ContentPo;
 import com.hubei.base.po.MenuPo;
@@ -51,6 +52,13 @@ public class MenuService {
     }
 
     public Integer insertMenu(MenuInsertRequest request) {
+        MenuPo menuPo = new MenuPo();
+        menuPo.setMenuName(request.getMenuName());
+        menuPo.setSort(request.getSort());
+        menuPo.setLastUpdateTime(System.currentTimeMillis());
+        menuPo.setInsertTime(System.currentTimeMillis());
+        menuPo.setStatus(Status.OK.getCode());
+        menuMapper.insert(menuPo);
         return 0;
     }
 }

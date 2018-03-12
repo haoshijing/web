@@ -4,4 +4,7 @@ import lombok.Data;
 
 @Data
 public class MenuInsertRequest {
+    private Integer parentId;
+    private String menuName;
+    private Integer sort;
 }
