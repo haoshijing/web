@@ -8,6 +8,15 @@
     <sql id = "tableName">
         t_menu
     </sql>
+    <sql id="queryWhere">
+        <if test = "menuName != null and menuName != ''">
+            AND menuName like CONCAT(CONCAT('%',#{menuName}),'%')
+        </if>
+        <if test = "parentId != null">
+            AND parentId = #{parentId}
+        </if>
+        limit #{offset} , #{limit}
+    </sql>
 
     <insert id="insert" parameterType="MenuPo">
         INSERT INTO <include refid="tableName"/>
