@@ -9,4 +9,6 @@ public class ContentVo {
     private String url;
     private String menuName;
     private Long createTime;
+    private Integer id;
+    private Integer sort;
 }

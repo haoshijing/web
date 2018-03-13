@@ -38,10 +38,25 @@
         #{lastUpdateTime}
         )
     </insert>
-    <select id = "selectById" resultType="ContentPo">
+    <select id = "selectById" resultType="MenuPo">
         select  <include refid="all_columns"/>
         FROM <include refid="tableName"/>
         where id = #{id}
     </select>
-
+    <select id="selectList" parameterType="MenuPo" resultType="MenuPo">
+        select <include refid="all_columns"/>
+        FROM <include refid="tableName"/>
+        <where>
+            1 = 1
+            <include refid="queryWhere"/>
+        </where>
+    </select>
+    <select id="selectCount" parameterType="MenuPo" resultType="java.lang.Integer">
+        select count(1)
+        FROM <include refid="tableName"/>
+        <where>
+            1 = 1
+            <include refid="queryWhere"/>
+        </where>
+    </select>
 </mapper>

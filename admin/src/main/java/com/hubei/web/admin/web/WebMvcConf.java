@@ -7,10 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.*;
 
 /**
  * @author albert
@@ -38,9 +35,16 @@ public class WebMvcConf extends WebMvcConfigurerAdapter {
     public void addInterceptors(InterceptorRegistry registry) {
         // 注册监控拦截器
         registry.addInterceptor(processInterceptor)
-                .addPathPatterns("/**");
-        registry.addInterceptor(authInterceptor)
-                .addPathPatterns("/**");
+                .addPathPatterns("/**").
+                excludePathPatterns("/images/**");
+//        registry.addInterceptor(authInterceptor)
+//                .addPathPatterns("/**");
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        //将所有/static/** 访问都映射到classpath:/static/ 目录下
+        registry.addResourceHandler("/images/**").addResourceLocations("classpath:/static/");
     }
 
     @Override

@@ -36,11 +36,11 @@ public class MenuService {
         List<MenuPo> menuPos = menuMapper.selectList(queryPo);
         return menuPos.stream().map(menuPo -> {
             MenuVo menuVo = new MenuVo();
-            BeanUtils.copyProperties(menuVo,menuPo);
+            BeanUtils.copyProperties(menuPo,menuVo);
             if(menuPo.getParentId() != null){
                 MenuPo dbMenuPo = menuMapper.selectById(menuPo.getParentId());
                 if(dbMenuPo != null){
-                    menuVo.setMenuName(dbMenuPo.getMenuName());
+                    menuVo.setMenuParentName(dbMenuPo.getMenuName());
                 }
             }
             return  menuVo;
