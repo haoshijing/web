@@ -9,6 +9,7 @@ public class MenuVo {
     private Integer id;
     private Integer status;
     private Integer parentId;
+    private Integer sort;
     /**
      * 子菜单个数
      */

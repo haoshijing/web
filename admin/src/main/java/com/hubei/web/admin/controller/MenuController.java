@@ -10,6 +10,7 @@ import com.hubei.web.admin.controller.request.ContentQueryVo;
 import com.hubei.web.admin.controller.request.MenuInsertRequest;
 import com.hubei.web.admin.controller.request.MenuQueryVo;
 import com.hubei.web.admin.controller.response.MenuVo;
+import com.hubei.web.admin.controller.response.ParentMenuVo;
 import com.hubei.web.admin.service.MenuService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,6 +43,12 @@ public class MenuController {
         Integer count = menuService.selectCount(menuQueryVo);
         return new ApiResponse<>(count);
     }
+    @RequestMapping("/queryParentMenu")
+    public ApiResponse<List<ParentMenuVo>> queryParentMenu(){
+        List<ParentMenuVo> menuPos = menuService.queryParentMenus();
+        return  new ApiResponse<>(menuPos);
+    }
+    @RequestMapping("/insertMenu")
     public ApiResponse<Integer> insertMenu(@RequestBody MenuInsertRequest request){
         Integer result =  menuService.insertMenu(request);
         return new ApiResponse<>(result);
