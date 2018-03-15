@@ -16,8 +16,6 @@ import org.springframework.web.servlet.config.annotation.*;
  * @date January 14, 2018
  */
 @Configuration
-@EnableWebMvc
-@PropertySource(value = "classpath:application.properties", encoding = "UTF-8")
 @Slf4j
 public class WebMvcConf extends WebMvcConfigurerAdapter {
 
@@ -35,24 +33,15 @@ public class WebMvcConf extends WebMvcConfigurerAdapter {
     public void addInterceptors(InterceptorRegistry registry) {
         // 注册监控拦截器
         registry.addInterceptor(processInterceptor)
-                .addPathPatterns("/**").
-                excludePathPatterns("/images/**");
+                .addPathPatterns("/content/**").
+                addPathPatterns("/menu/**").
+                addPathPatterns("/login")
+                .addPathPatterns("/user/**").
+                excludePathPatterns("/image/**");
 //        registry.addInterceptor(authInterceptor)
 //                .addPathPatterns("/**");
     }
 
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        //将所有/static/** 访问都映射到classpath:/static/ 目录下
-        registry.addResourceHandler("/images/**").addResourceLocations("classpath:/static/");
-    }
 
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")
-                .allowedOrigins("*")
-                .allowedHeaders("*/*")
-                .allowedMethods("*")
-                .maxAge(120);
-    }
+
 }
