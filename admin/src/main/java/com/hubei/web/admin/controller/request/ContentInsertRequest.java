@@ -9,4 +9,5 @@ public class ContentInsertRequest {
     private Integer sort;
     private String image;
     private String url;
+    private Integer menuId;
 }

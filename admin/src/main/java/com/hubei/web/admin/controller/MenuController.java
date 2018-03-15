@@ -9,6 +9,7 @@ import com.hubei.base.po.MenuPo;
 import com.hubei.web.admin.controller.request.ContentQueryVo;
 import com.hubei.web.admin.controller.request.MenuInsertRequest;
 import com.hubei.web.admin.controller.request.MenuQueryVo;
+import com.hubei.web.admin.controller.response.ContentMenuVo;
 import com.hubei.web.admin.controller.response.MenuVo;
 import com.hubei.web.admin.controller.response.ParentMenuVo;
 import com.hubei.web.admin.service.MenuService;
@@ -46,6 +47,12 @@ public class MenuController {
     @RequestMapping("/queryParentMenu")
     public ApiResponse<List<ParentMenuVo>> queryParentMenu(){
         List<ParentMenuVo> menuPos = menuService.queryParentMenus();
+        return  new ApiResponse<>(menuPos);
+    }
+
+    @RequestMapping("/queryMenuListForContent")
+    public ApiResponse<List<ContentMenuVo>> queryMenuListForContent(){
+        List<ContentMenuVo> menuPos = menuService.queryMenuListForContent();
         return  new ApiResponse<>(menuPos);
     }
     @RequestMapping("/insertMenu")

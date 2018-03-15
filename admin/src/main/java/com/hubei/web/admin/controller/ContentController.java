@@ -6,6 +6,7 @@ import com.hubei.base.mapper.impl.MenuMapper;
 import com.hubei.base.po.ContentPo;
 import com.hubei.base.po.MenuPo;
 import com.hubei.web.admin.controller.request.ContentInsertRequest;
+import com.hubei.web.admin.controller.request.ContentQueryVo;
 import com.hubei.web.admin.controller.response.ContentVo;
 import com.hubei.web.admin.service.ContentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +31,9 @@ public class ContentController {
     @Autowired
     private ContentService contentService;
     @RequestMapping("/selectList")
-    public ApiResponse<List<ContentVo>> queryList(String name, Integer page){
+    public ApiResponse<List<ContentVo>> queryList(@RequestBody ContentQueryVo contentQueryVo){
+        Integer page = contentQueryVo.getPage();
+        String name = contentQueryVo.getName();
         if(page == 0){
             page = 1;
         }
@@ -58,8 +61,9 @@ public class ContentController {
     }
 
     @RequestMapping("/selectCount")
-    public ApiResponse<Integer> selectCount(String name, Integer page){
+    public ApiResponse<Integer> selectCount(@RequestBody ContentQueryVo contentQueryVo){
         ContentPo queryPo = new ContentPo();
+        String name = contentQueryVo.getName();
         queryPo.setName(name);
         Integer count = contentMapper.selectCount(queryPo);
         return new ApiResponse<>(count);
@@ -68,8 +72,6 @@ public class ContentController {
     @RequestMapping("/insertContent")
     public ApiResponse<Integer> insertContent(@RequestBody ContentInsertRequest request){
         Integer count = contentService.insert(request);
-        ContentPo contentPo = new ContentPo();
-
         return new ApiResponse<>(count);
     }
 

@@ -6,6 +6,7 @@ import com.hubei.base.po.ContentPo;
 import com.hubei.base.po.MenuPo;
 import com.hubei.web.admin.controller.request.MenuInsertRequest;
 import com.hubei.web.admin.controller.request.MenuQueryVo;
+import com.hubei.web.admin.controller.response.ContentMenuVo;
 import com.hubei.web.admin.controller.response.MenuVo;
 import com.hubei.web.admin.controller.response.ParentMenuVo;
 import org.springframework.beans.BeanUtils;
@@ -81,5 +82,20 @@ public class MenuService {
                     return parentMenuVo;
         }).collect(Collectors.toList());
         return  parentMenuVos;
+    }
+
+    public List<ContentMenuVo> queryMenuListForContent() {
+
+        List<ContentMenuVo> contentMenuVos =  menuMapper.queryMenuListForContent().
+                stream().map(menuPo -> {
+            ContentMenuVo contentMenuVo = new ContentMenuVo();
+            contentMenuVo.setMenuId(menuPo.getId());
+            MenuPo parentPo = menuMapper.selectById(menuPo.getParentId());
+            StringBuilder sb = new StringBuilder("(").append(parentPo.getMenuName())
+            .append(")").append(menuPo.getMenuName());
+            contentMenuVo.setMenuName(sb.toString());
+            return contentMenuVo;
+        }).collect(Collectors.toList());
+        return  contentMenuVos;
     }
 }
