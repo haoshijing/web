@@ -44,6 +44,21 @@
         )
     </insert>
 
+    <update id="updateById" parameterType="ContentPo">
+        update <include refid="tableName"/>
+        <set>
+            <if test = "image != null">
+                image = #{image},
+            </if>
+            <if test = "name != null">
+                name = #{name},
+            </if>
+            <if test = "url != null">
+                url = #{url},
+            </if>
+        </set>
+    </update>
+
     <select id="selectList" parameterType="ContentPo" resultType="ContentPo">
         select <include refid="all_columns"/>
         FROM <include refid="tableName"/>
