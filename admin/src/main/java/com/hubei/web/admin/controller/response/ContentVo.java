@@ -8,7 +8,9 @@ public class ContentVo {
     private String image;
     private String url;
     private String menuName;
+    private Integer menuId;
     private Long createTime;
     private Integer id;
     private Integer sort;
+    private Integer webPrice;
 }

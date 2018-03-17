@@ -56,10 +56,12 @@ public class ContentController {
             if(menuPo != null){
                 contentVo.setMenuName(menuPo.getMenuName());
             }
+            contentVo.setMenuId(contentPo.getMenuId());
             contentVo.setUrl(contentPo.getUrl());
             contentVo.setName(contentPo.getName());
             contentVo.setId(contentPo.getId());
             contentVo.setSort(contentPo.getSort());
+            contentVo.setWebPrice(contentPo.getWebPrice());
             return  contentVo;
         }).collect(Collectors.toList());
         return new ApiResponse<>(contentVos);
@@ -77,6 +79,12 @@ public class ContentController {
     @RequestMapping("/insertContent")
     public ApiResponse<Integer> insertContent(@RequestBody ContentInsertRequest request){
         Integer count = contentService.insert(request);
+        return new ApiResponse<>(count);
+    }
+
+    @RequestMapping("/updateContent")
+    public ApiResponse<Integer> updateContent(@RequestBody ContentInsertRequest request){
+        Integer count = contentService.update(request);
         return new ApiResponse<>(count);
     }
 

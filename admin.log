@@ -3029,3 +3029,1010 @@ java.lang.NullPointerException: null
 2018-03-16 11:49:37.603  INFO 10080 --- [http-nio-9123-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2018-03-16 11:49:37.603  INFO 10080 --- [http-nio-9123-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2018-03-16 11:49:37.629  INFO 10080 --- [http-nio-9123-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-03-16 22:02:06.464  INFO 8333 --- [main] com.hubei.web.admin.ApplicationStarter   : Starting ApplicationStarter on lindseydeMacBook-Pro.local with PID 8333 (/Users/lindseykong/git/code/web/web/admin/target/classes started by lindseykong in /Users/lindseykong/git/code/web/web)
+2018-03-16 22:02:06.468  INFO 8333 --- [main] com.hubei.web.admin.ApplicationStarter   : The following profiles are active: dev
+2018-03-16 22:02:06.541  INFO 8333 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:02:06 CST 2018]; root of context hierarchy
+2018-03-16 22:02:07.042  INFO 8333 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [application-context.xml]
+2018-03-16 22:02:07.423  WARN 8333 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubei.web.admin]' package. Please check your configuration.
+2018-03-16 22:02:07.477  INFO 8333 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-16 22:02:07.913  INFO 8333 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9ce129d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 22:02:08.398  INFO 8333 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9123 (http)
+2018-03-16 22:02:08.410  INFO 8333 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 22:02:08.412  INFO 8333 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-03-16 22:02:08.510  INFO 8333 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring embedded WebApplicationContext
+2018-03-16 22:02:08.511  INFO 8333 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1975 ms
+2018-03-16 22:02:08.639  INFO 8333 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 22:02:08.644  INFO 8333 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 22:02:08.644  INFO 8333 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 22:02:08.645  INFO 8333 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 22:02:08.645  INFO 8333 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 22:02:08.846  INFO 8333 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-16 22:02:09.450  INFO 8333 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:02:06 CST 2018]; root of context hierarchy
+2018-03-16 22:02:09.528  INFO 8333 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ContentVo>> com.hubei.web.admin.controller.ContentController.queryList(com.hubei.web.admin.controller.request.ContentQueryVo)
+2018-03-16 22:02:09.528  INFO 8333 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectCount]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.ContentController.selectCount(com.hubei.web.admin.controller.request.ContentQueryVo)
+2018-03-16 22:02:09.529  INFO 8333 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/insertContent]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.ContentController.insertContent(com.hubei.web.admin.controller.request.ContentInsertRequest)
+2018-03-16 22:02:09.529  INFO 8333 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/upload]}" onto public com.hubei.base.ApiResponse<java.lang.String> com.hubei.web.admin.controller.ContentController.uploadImage(org.springframework.web.multipart.MultipartFile)
+2018-03-16 22:02:09.530  INFO 8333 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public com.hubei.base.ApiResponse<com.hubei.web.admin.controller.response.LoginResponse> com.hubei.web.admin.controller.LoginController.login(com.hubei.web.admin.controller.request.LoginDataRequest)
+2018-03-16 22:02:09.531  INFO 8333 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/selectCount]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.MenuController.selectCount(com.hubei.web.admin.controller.request.MenuQueryVo)
+2018-03-16 22:02:09.532  INFO 8333 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.MenuVo>> com.hubei.web.admin.controller.MenuController.selectList(com.hubei.web.admin.controller.request.MenuQueryVo)
+2018-03-16 22:02:09.532  INFO 8333 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/queryParentMenu]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ParentMenuVo>> com.hubei.web.admin.controller.MenuController.queryParentMenu()
+2018-03-16 22:02:09.532  INFO 8333 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/queryMenuListForContent]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ContentMenuVo>> com.hubei.web.admin.controller.MenuController.queryMenuListForContent()
+2018-03-16 22:02:09.532  INFO 8333 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/insertMenu]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.MenuController.insertMenu(com.hubei.web.admin.controller.request.MenuInsertRequest)
+2018-03-16 22:02:09.533  INFO 8333 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/info]}" onto public com.hubei.base.ApiResponse<com.hubei.web.admin.controller.response.UserDataResponse> com.hubei.web.admin.controller.UserController.getUserInfo()
+2018-03-16 22:02:09.534  INFO 8333 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 22:02:09.535  INFO 8333 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 22:02:09.564  INFO 8333 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 22:02:09.564  INFO 8333 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 22:02:09.581  INFO 8333 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandlerAdvice
+2018-03-16 22:02:09.602  INFO 8333 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 22:02:15.153  INFO 8333 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:02:06 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-03-16 22:02:15.155  INFO 8333 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-16 22:02:15.181  WARN 8333 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2018-03-16 22:02:15.403  INFO 8333 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-16 22:02:15.404  INFO 8333 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-16 22:02:15.411  INFO 8333 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-16 22:02:15.469  INFO 8333 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9123 (http)
+2018-03-16 22:02:15.473  INFO 8333 --- [main] com.hubei.web.admin.ApplicationStarter   : Started ApplicationStarter in 19.406 seconds (JVM running for 30.385)
+2018-03-16 22:03:45.352  INFO 8333 --- [http-nio-9123-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-16 22:03:45.352  INFO 8333 --- [http-nio-9123-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-16 22:03:45.378  INFO 8333 --- [http-nio-9123-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-03-16 22:13:29.243  INFO 8333 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:02:06 CST 2018]; root of context hierarchy
+2018-03-16 22:13:29.260  INFO 8333 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-16 22:13:29.261  INFO 8333 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-03-16 22:13:29.273  INFO 8333 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-03-16 22:14:03.670  INFO 8408 --- [main] com.hubei.web.admin.ApplicationStarter   : Starting ApplicationStarter on lindseydeMacBook-Pro.local with PID 8408 (/Users/lindseykong/git/code/web/web/admin/target/classes started by lindseykong in /Users/lindseykong/git/code/web/web)
+2018-03-16 22:14:03.675  INFO 8408 --- [main] com.hubei.web.admin.ApplicationStarter   : The following profiles are active: dev
+2018-03-16 22:14:03.722  INFO 8408 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:14:03 CST 2018]; root of context hierarchy
+2018-03-16 22:14:04.107  INFO 8408 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [application-context.xml]
+2018-03-16 22:14:04.336  WARN 8408 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubei.web.admin]' package. Please check your configuration.
+2018-03-16 22:14:04.358  INFO 8408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-16 22:14:04.877  INFO 8408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6580fd5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 22:14:05.398  INFO 8408 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8123 (http)
+2018-03-16 22:14:05.407  INFO 8408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 22:14:05.407  INFO 8408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-03-16 22:14:05.488  INFO 8408 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring embedded WebApplicationContext
+2018-03-16 22:14:05.489  INFO 8408 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1770 ms
+2018-03-16 22:14:05.607  INFO 8408 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 22:14:05.611  INFO 8408 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 22:14:05.612  INFO 8408 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 22:14:05.612  INFO 8408 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 22:14:05.613  INFO 8408 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 22:14:05.770  INFO 8408 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-16 22:14:06.446  INFO 8408 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:14:03 CST 2018]; root of context hierarchy
+2018-03-16 22:14:06.513  INFO 8408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ContentVo>> com.hubei.web.admin.controller.ContentController.queryList(com.hubei.web.admin.controller.request.ContentQueryVo)
+2018-03-16 22:14:06.514  INFO 8408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectCount]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.ContentController.selectCount(com.hubei.web.admin.controller.request.ContentQueryVo)
+2018-03-16 22:14:06.515  INFO 8408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/insertContent]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.ContentController.insertContent(com.hubei.web.admin.controller.request.ContentInsertRequest)
+2018-03-16 22:14:06.515  INFO 8408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/upload]}" onto public com.hubei.base.ApiResponse<java.lang.String> com.hubei.web.admin.controller.ContentController.uploadImage(org.springframework.web.multipart.MultipartFile)
+2018-03-16 22:14:06.515  INFO 8408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public com.hubei.base.ApiResponse<com.hubei.web.admin.controller.response.LoginResponse> com.hubei.web.admin.controller.LoginController.login(com.hubei.web.admin.controller.request.LoginDataRequest)
+2018-03-16 22:14:06.516  INFO 8408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/selectCount]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.MenuController.selectCount(com.hubei.web.admin.controller.request.MenuQueryVo)
+2018-03-16 22:14:06.517  INFO 8408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.MenuVo>> com.hubei.web.admin.controller.MenuController.selectList(com.hubei.web.admin.controller.request.MenuQueryVo)
+2018-03-16 22:14:06.517  INFO 8408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/queryParentMenu]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ParentMenuVo>> com.hubei.web.admin.controller.MenuController.queryParentMenu()
+2018-03-16 22:14:06.518  INFO 8408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/queryMenuListForContent]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ContentMenuVo>> com.hubei.web.admin.controller.MenuController.queryMenuListForContent()
+2018-03-16 22:14:06.518  INFO 8408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/insertMenu]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.MenuController.insertMenu(com.hubei.web.admin.controller.request.MenuInsertRequest)
+2018-03-16 22:14:06.519  INFO 8408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/info]}" onto public com.hubei.base.ApiResponse<com.hubei.web.admin.controller.response.UserDataResponse> com.hubei.web.admin.controller.UserController.getUserInfo()
+2018-03-16 22:14:06.521  INFO 8408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 22:14:06.521  INFO 8408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 22:14:06.547  INFO 8408 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 22:14:06.547  INFO 8408 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 22:14:06.563  INFO 8408 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandlerAdvice
+2018-03-16 22:14:06.585  INFO 8408 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 22:14:12.208  INFO 8408 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:14:03 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-03-16 22:14:12.213  INFO 8408 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-16 22:14:12.236  WARN 8408 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2018-03-16 22:14:12.466  INFO 8408 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-16 22:14:12.468  INFO 8408 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-16 22:14:12.475  INFO 8408 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-16 22:14:12.533  INFO 8408 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8123 (http)
+2018-03-16 22:14:12.538  INFO 8408 --- [main] com.hubei.web.admin.ApplicationStarter   : Started ApplicationStarter in 19.112 seconds (JVM running for 29.678)
+2018-03-16 22:15:19.688  INFO 8408 --- [http-nio-8123-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-16 22:15:19.688  INFO 8408 --- [http-nio-8123-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-16 22:15:19.709  INFO 8408 --- [http-nio-8123-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-03-16 22:48:26.104  INFO 8408 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:14:03 CST 2018]; root of context hierarchy
+2018-03-16 22:48:26.118  INFO 8408 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-16 22:48:26.119  INFO 8408 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-03-16 22:48:26.128  INFO 8408 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-03-16 22:49:00.335  INFO 8773 --- [main] com.hubei.web.admin.ApplicationStarter   : Starting ApplicationStarter on lindseydeMacBook-Pro.local with PID 8773 (/Users/lindseykong/git/code/web/web/admin/target/classes started by lindseykong in /Users/lindseykong/git/code/web/web)
+2018-03-16 22:49:00.340  INFO 8773 --- [main] com.hubei.web.admin.ApplicationStarter   : The following profiles are active: dev
+2018-03-16 22:49:00.404  INFO 8773 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:49:00 CST 2018]; root of context hierarchy
+2018-03-16 22:49:00.896  INFO 8773 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [application-context.xml]
+2018-03-16 22:49:01.203  WARN 8773 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubei.web.admin]' package. Please check your configuration.
+2018-03-16 22:49:01.250  INFO 8773 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-16 22:49:01.741  INFO 8773 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9ce129d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 22:49:02.196  INFO 8773 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8123 (http)
+2018-03-16 22:49:02.208  INFO 8773 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 22:49:02.209  INFO 8773 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-03-16 22:49:02.309  INFO 8773 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring embedded WebApplicationContext
+2018-03-16 22:49:02.309  INFO 8773 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1907 ms
+2018-03-16 22:49:02.425  INFO 8773 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 22:49:02.430  INFO 8773 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 22:49:02.430  INFO 8773 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 22:49:02.431  INFO 8773 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 22:49:02.431  INFO 8773 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 22:49:02.615  INFO 8773 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-16 22:49:03.236  INFO 8773 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:49:00 CST 2018]; root of context hierarchy
+2018-03-16 22:49:03.300  INFO 8773 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ContentVo>> com.hubei.web.admin.controller.ContentController.queryList(com.hubei.web.admin.controller.request.ContentQueryVo)
+2018-03-16 22:49:03.302  INFO 8773 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectCount]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.ContentController.selectCount(com.hubei.web.admin.controller.request.ContentQueryVo)
+2018-03-16 22:49:03.302  INFO 8773 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/insertContent]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.ContentController.insertContent(com.hubei.web.admin.controller.request.ContentInsertRequest)
+2018-03-16 22:49:03.302  INFO 8773 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/upload]}" onto public com.hubei.base.ApiResponse<java.lang.String> com.hubei.web.admin.controller.ContentController.uploadImage(org.springframework.web.multipart.MultipartFile)
+2018-03-16 22:49:03.303  INFO 8773 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public com.hubei.base.ApiResponse<com.hubei.web.admin.controller.response.LoginResponse> com.hubei.web.admin.controller.LoginController.login(com.hubei.web.admin.controller.request.LoginDataRequest)
+2018-03-16 22:49:03.305  INFO 8773 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/selectCount]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.MenuController.selectCount(com.hubei.web.admin.controller.request.MenuQueryVo)
+2018-03-16 22:49:03.305  INFO 8773 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.MenuVo>> com.hubei.web.admin.controller.MenuController.selectList(com.hubei.web.admin.controller.request.MenuQueryVo)
+2018-03-16 22:49:03.306  INFO 8773 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/queryParentMenu]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ParentMenuVo>> com.hubei.web.admin.controller.MenuController.queryParentMenu()
+2018-03-16 22:49:03.306  INFO 8773 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/queryMenuListForContent]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ContentMenuVo>> com.hubei.web.admin.controller.MenuController.queryMenuListForContent()
+2018-03-16 22:49:03.306  INFO 8773 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/insertMenu]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.MenuController.insertMenu(com.hubei.web.admin.controller.request.MenuInsertRequest)
+2018-03-16 22:49:03.307  INFO 8773 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/info]}" onto public com.hubei.base.ApiResponse<com.hubei.web.admin.controller.response.UserDataResponse> com.hubei.web.admin.controller.UserController.getUserInfo()
+2018-03-16 22:49:03.309  INFO 8773 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 22:49:03.310  INFO 8773 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 22:49:03.343  INFO 8773 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 22:49:03.343  INFO 8773 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 22:49:03.359  INFO 8773 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandlerAdvice
+2018-03-16 22:49:03.381  INFO 8773 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 22:49:08.965  INFO 8773 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:49:00 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-03-16 22:49:08.966  INFO 8773 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-16 22:49:08.991  WARN 8773 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2018-03-16 22:49:09.218  INFO 8773 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-16 22:49:09.219  INFO 8773 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-16 22:49:09.227  INFO 8773 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-16 22:49:09.284  INFO 8773 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8123 (http)
+2018-03-16 22:49:09.290  INFO 8773 --- [main] com.hubei.web.admin.ApplicationStarter   : Started ApplicationStarter in 19.328 seconds (JVM running for 30.105)
+2018-03-16 22:49:31.021  INFO 8773 --- [http-nio-8123-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-16 22:49:31.021  INFO 8773 --- [http-nio-8123-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-16 22:49:31.041  INFO 8773 --- [http-nio-8123-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-03-16 22:57:00.545  INFO 8773 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:49:00 CST 2018]; root of context hierarchy
+2018-03-16 22:57:00.552  INFO 8773 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-16 22:57:00.553  INFO 8773 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-03-16 22:57:00.560  INFO 8773 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-03-16 22:57:36.701  INFO 8802 --- [main] com.hubei.web.admin.ApplicationStarter   : Starting ApplicationStarter on lindseydeMacBook-Pro.local with PID 8802 (/Users/lindseykong/git/code/web/web/admin/target/classes started by lindseykong in /Users/lindseykong/git/code/web/web)
+2018-03-16 22:57:36.704  INFO 8802 --- [main] com.hubei.web.admin.ApplicationStarter   : The following profiles are active: dev
+2018-03-16 22:57:36.772  INFO 8802 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:57:36 CST 2018]; root of context hierarchy
+2018-03-16 22:57:37.265  INFO 8802 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [application-context.xml]
+2018-03-16 22:57:37.543  WARN 8802 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubei.web.admin]' package. Please check your configuration.
+2018-03-16 22:57:37.591  INFO 8802 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-16 22:57:38.013  INFO 8802 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$242da3d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 22:57:38.491  INFO 8802 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8123 (http)
+2018-03-16 22:57:38.504  INFO 8802 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 22:57:38.506  INFO 8802 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-03-16 22:57:38.599  INFO 8802 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring embedded WebApplicationContext
+2018-03-16 22:57:38.600  INFO 8802 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1830 ms
+2018-03-16 22:57:38.720  INFO 8802 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 22:57:38.724  INFO 8802 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 22:57:38.725  INFO 8802 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 22:57:38.725  INFO 8802 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 22:57:38.725  INFO 8802 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 22:57:38.918  INFO 8802 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-16 22:57:39.496  INFO 8802 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:57:36 CST 2018]; root of context hierarchy
+2018-03-16 22:57:39.566  INFO 8802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ContentVo>> com.hubei.web.admin.controller.ContentController.queryList(com.hubei.web.admin.controller.request.ContentQueryVo)
+2018-03-16 22:57:39.567  INFO 8802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectCount]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.ContentController.selectCount(com.hubei.web.admin.controller.request.ContentQueryVo)
+2018-03-16 22:57:39.567  INFO 8802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/insertContent]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.ContentController.insertContent(com.hubei.web.admin.controller.request.ContentInsertRequest)
+2018-03-16 22:57:39.568  INFO 8802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/updateContent]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.ContentController.updateContent(com.hubei.web.admin.controller.request.ContentInsertRequest)
+2018-03-16 22:57:39.568  INFO 8802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/upload]}" onto public com.hubei.base.ApiResponse<java.lang.String> com.hubei.web.admin.controller.ContentController.uploadImage(org.springframework.web.multipart.MultipartFile)
+2018-03-16 22:57:39.568  INFO 8802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public com.hubei.base.ApiResponse<com.hubei.web.admin.controller.response.LoginResponse> com.hubei.web.admin.controller.LoginController.login(com.hubei.web.admin.controller.request.LoginDataRequest)
+2018-03-16 22:57:39.570  INFO 8802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/queryParentMenu]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ParentMenuVo>> com.hubei.web.admin.controller.MenuController.queryParentMenu()
+2018-03-16 22:57:39.570  INFO 8802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/queryMenuListForContent]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ContentMenuVo>> com.hubei.web.admin.controller.MenuController.queryMenuListForContent()
+2018-03-16 22:57:39.570  INFO 8802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/insertMenu]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.MenuController.insertMenu(com.hubei.web.admin.controller.request.MenuInsertRequest)
+2018-03-16 22:57:39.570  INFO 8802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/selectCount]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.MenuController.selectCount(com.hubei.web.admin.controller.request.MenuQueryVo)
+2018-03-16 22:57:39.570  INFO 8802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.MenuVo>> com.hubei.web.admin.controller.MenuController.selectList(com.hubei.web.admin.controller.request.MenuQueryVo)
+2018-03-16 22:57:39.571  INFO 8802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/info]}" onto public com.hubei.base.ApiResponse<com.hubei.web.admin.controller.response.UserDataResponse> com.hubei.web.admin.controller.UserController.getUserInfo()
+2018-03-16 22:57:39.573  INFO 8802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 22:57:39.573  INFO 8802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 22:57:39.602  INFO 8802 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 22:57:39.602  INFO 8802 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 22:57:39.619  INFO 8802 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandlerAdvice
+2018-03-16 22:57:39.642  INFO 8802 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 22:57:45.168  INFO 8802 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:57:36 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-03-16 22:57:45.169  INFO 8802 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-16 22:57:45.194  WARN 8802 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2018-03-16 22:57:45.419  INFO 8802 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-16 22:57:45.420  INFO 8802 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-16 22:57:45.425  INFO 8802 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-16 22:57:45.484  INFO 8802 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8123 (http)
+2018-03-16 22:57:45.489  INFO 8802 --- [main] com.hubei.web.admin.ApplicationStarter   : Started ApplicationStarter in 19.144 seconds (JVM running for 29.869)
+2018-03-17 00:08:02.989  INFO 8802 --- [http-nio-8123-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-17 00:08:02.991  INFO 8802 --- [http-nio-8123-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-17 00:08:03.034  INFO 8802 --- [http-nio-8123-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms
+2018-03-17 00:08:52.218 ERROR 8802 --- [http-nio-8123-exec-8] c.alibaba.druid.filter.stat.StatFilter   : merge sql error, dbType mysql, druid-1.1.6, sql : update  
+        t_content
+     
+         SET image = ?,
+            
+            
+                name = ?,
+            
+            
+                url = ?,
+            
+
+            
+                menuId = ?,
+            
+            
+                sort = ?,
+            
+            where id = ?
+
+com.alibaba.druid.sql.parser.ParserException: syntax error, expect EQ, actual IDENTIFIER pos 300, line 19, column 20, token IDENTIFIER id
+	at com.alibaba.druid.sql.parser.SQLExprParser.parseUpdateSetItem(SQLExprParser.java:1627) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseUpdateStatment(MySqlSelectParser.java:333) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseUpdateStatement(MySqlStatementParser.java:124) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:153) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:70) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ParameterizedOutputVisitorUtils.java:78) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ParameterizedOutputVisitorUtils.java:49) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.stat.StatFilter.mergeSql(StatFilter.java:147) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.stat.StatFilter.createSqlStat(StatFilter.java:648) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.stat.StatFilter.statementPrepareAfter(StatFilter.java:311) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(FilterEventAdapter.java:124) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:473) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:342) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349) [druid-1.1.6.jar:1.1.6]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:87) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) [mybatis-3.4.4.jar:3.4.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434) [mybatis-spring-1.3.0.jar:1.3.0]
+	at com.sun.proxy.$Proxy63.update(Unknown Source) [na:na]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:295) [mybatis-spring-1.3.0.jar:1.3.0]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) [mybatis-3.4.4.jar:3.4.4]
+	at com.sun.proxy.$Proxy64.update(Unknown Source) [na:na]
+	at com.hubei.web.admin.service.ContentService.update(ContentService.java:47) [classes/:na]
+	at com.hubei.web.admin.service.ContentService$$FastClassBySpringCGLIB$$700aba50.invoke(<generated>) [classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738) [spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) [spring-tx-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) [spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.hubei.web.admin.service.ContentService$$EnhancerBySpringCGLIB$$9fc93e34.update(<generated>) [classes/:na]
+	at com.hubei.web.admin.controller.ContentController.updateContent(ContentController.java:86) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+
+2018-03-17 00:08:52.233  INFO 8802 --- [http-nio-8123-exec-8] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-03-17 00:08:52.259  INFO 8802 --- [http-nio-8123-exec-8] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2018-03-17 00:08:52.270 ERROR 8802 --- [http-nio-8123-exec-8] c.h.w.admin.web.ExceptionHandlerAdvice   : {}
+
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 1' at line 19
+### The error may involve com.hubei.base.mapper.impl.ContentMapper.update-Inline
+### The error occurred while setting parameters
+### SQL: update           t_content                SET image = ?,                                           name = ?,                                           url = ?,                                            menuId = ?,                                           sort = ?,                          where id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 1' at line 19
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 1' at line 19
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:75) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:447) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	at com.sun.proxy.$Proxy63.update(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:295) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.4.jar:3.4.4]
+	at com.sun.proxy.$Proxy64.update(Unknown Source) ~[na:na]
+	at com.hubei.web.admin.service.ContentService.update(ContentService.java:47) ~[classes/:na]
+	at com.hubei.web.admin.service.ContentService$$FastClassBySpringCGLIB$$700aba50.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.hubei.web.admin.service.ContentService$$EnhancerBySpringCGLIB$$9fc93e34.update(<generated>) ~[classes/:na]
+	at com.hubei.web.admin.controller.ContentController.updateContent(ContentController.java:86) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 1' at line 19
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2487) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498) ~[druid-1.1.6.jar:1.1.6]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) ~[mybatis-3.4.4.jar:3.4.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	... 69 common frames omitted
+
+2018-03-17 00:10:26.646 ERROR 8802 --- [http-nio-8123-exec-1] c.alibaba.druid.filter.stat.StatFilter   : merge sql error, dbType mysql, druid-1.1.6, sql : update  
+        t_content
+     
+         SET image = ?,
+            
+            
+                name = ?,
+            
+            
+                url = ?,
+            
+
+            
+                menuId = ?,
+            
+            
+                sort = ?,
+            
+            where id = ?
+
+com.alibaba.druid.sql.parser.ParserException: syntax error, expect EQ, actual IDENTIFIER pos 300, line 19, column 20, token IDENTIFIER id
+	at com.alibaba.druid.sql.parser.SQLExprParser.parseUpdateSetItem(SQLExprParser.java:1627) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseUpdateStatment(MySqlSelectParser.java:333) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseUpdateStatement(MySqlStatementParser.java:124) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:153) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:70) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ParameterizedOutputVisitorUtils.java:78) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ParameterizedOutputVisitorUtils.java:49) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.stat.StatFilter.mergeSql(StatFilter.java:147) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.stat.StatFilter.createSqlStat(StatFilter.java:648) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.stat.StatFilter.statementPrepareAfter(StatFilter.java:311) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(FilterEventAdapter.java:124) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:473) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:342) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349) [druid-1.1.6.jar:1.1.6]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:87) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) [mybatis-3.4.4.jar:3.4.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434) [mybatis-spring-1.3.0.jar:1.3.0]
+	at com.sun.proxy.$Proxy63.update(Unknown Source) [na:na]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:295) [mybatis-spring-1.3.0.jar:1.3.0]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) [mybatis-3.4.4.jar:3.4.4]
+	at com.sun.proxy.$Proxy64.update(Unknown Source) [na:na]
+	at com.hubei.web.admin.service.ContentService.update(ContentService.java:47) [classes/:na]
+	at com.hubei.web.admin.service.ContentService$$FastClassBySpringCGLIB$$700aba50.invoke(<generated>) [classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738) [spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) [spring-tx-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) [spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.hubei.web.admin.service.ContentService$$EnhancerBySpringCGLIB$$9fc93e34.update(<generated>) [classes/:na]
+	at com.hubei.web.admin.controller.ContentController.updateContent(ContentController.java:86) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+
+2018-03-17 00:11:04.288 ERROR 8802 --- [http-nio-8123-exec-1] c.h.w.admin.web.ExceptionHandlerAdvice   : {}
+
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 1' at line 19
+### The error may involve com.hubei.base.mapper.impl.ContentMapper.update-Inline
+### The error occurred while setting parameters
+### SQL: update           t_content                SET image = ?,                                           name = ?,                                           url = ?,                                            menuId = ?,                                           sort = ?,                          where id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 1' at line 19
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 1' at line 19
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:75) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:447) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	at com.sun.proxy.$Proxy63.update(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:295) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.4.jar:3.4.4]
+	at com.sun.proxy.$Proxy64.update(Unknown Source) ~[na:na]
+	at com.hubei.web.admin.service.ContentService.update(ContentService.java:47) ~[classes/:na]
+	at com.hubei.web.admin.service.ContentService$$FastClassBySpringCGLIB$$700aba50.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.hubei.web.admin.service.ContentService$$EnhancerBySpringCGLIB$$9fc93e34.update(<generated>) ~[classes/:na]
+	at com.hubei.web.admin.controller.ContentController.updateContent(ContentController.java:86) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 1' at line 19
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2487) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498) ~[druid-1.1.6.jar:1.1.6]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) ~[mybatis-3.4.4.jar:3.4.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	... 69 common frames omitted
+
+2018-03-17 00:14:10.090 ERROR 8802 --- [http-nio-8123-exec-4] c.alibaba.druid.filter.stat.StatFilter   : merge sql error, dbType mysql, druid-1.1.6, sql : update  
+        t_content
+     
+         SET image = ?,
+            
+            
+                name = ?,
+            
+            
+                url = ?,
+            
+
+            
+                menuId = ?,
+            
+            
+                sort = ?,
+            
+            where id = ?
+
+com.alibaba.druid.sql.parser.ParserException: syntax error, expect EQ, actual IDENTIFIER pos 300, line 19, column 20, token IDENTIFIER id
+	at com.alibaba.druid.sql.parser.SQLExprParser.parseUpdateSetItem(SQLExprParser.java:1627) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseUpdateStatment(MySqlSelectParser.java:333) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseUpdateStatement(MySqlStatementParser.java:124) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:153) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:70) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ParameterizedOutputVisitorUtils.java:78) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ParameterizedOutputVisitorUtils.java:49) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.stat.StatFilter.mergeSql(StatFilter.java:147) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.stat.StatFilter.createSqlStat(StatFilter.java:648) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.stat.StatFilter.statementPrepareAfter(StatFilter.java:311) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(FilterEventAdapter.java:124) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:473) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:342) [druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349) [druid-1.1.6.jar:1.1.6]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:87) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) [mybatis-3.4.4.jar:3.4.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434) [mybatis-spring-1.3.0.jar:1.3.0]
+	at com.sun.proxy.$Proxy63.update(Unknown Source) [na:na]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:295) [mybatis-spring-1.3.0.jar:1.3.0]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) [mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) [mybatis-3.4.4.jar:3.4.4]
+	at com.sun.proxy.$Proxy64.update(Unknown Source) [na:na]
+	at com.hubei.web.admin.service.ContentService.update(ContentService.java:47) [classes/:na]
+	at com.hubei.web.admin.service.ContentService$$FastClassBySpringCGLIB$$700aba50.invoke(<generated>) [classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738) [spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) [spring-tx-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) [spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.hubei.web.admin.service.ContentService$$EnhancerBySpringCGLIB$$9fc93e34.update(<generated>) [classes/:na]
+	at com.hubei.web.admin.controller.ContentController.updateContent(ContentController.java:86) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+
+2018-03-17 00:14:10.107 ERROR 8802 --- [http-nio-8123-exec-4] c.h.w.admin.web.ExceptionHandlerAdvice   : {}
+
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 1' at line 19
+### The error may involve com.hubei.base.mapper.impl.ContentMapper.update-Inline
+### The error occurred while setting parameters
+### SQL: update           t_content                SET image = ?,                                           name = ?,                                           url = ?,                                            menuId = ?,                                           sort = ?,                          where id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 1' at line 19
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 1' at line 19
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:75) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:447) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	at com.sun.proxy.$Proxy63.update(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:295) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.4.jar:3.4.4]
+	at com.sun.proxy.$Proxy64.update(Unknown Source) ~[na:na]
+	at com.hubei.web.admin.service.ContentService.update(ContentService.java:47) ~[classes/:na]
+	at com.hubei.web.admin.service.ContentService$$FastClassBySpringCGLIB$$700aba50.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) ~[spring-aop-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at com.hubei.web.admin.service.ContentService$$EnhancerBySpringCGLIB$$9fc93e34.update(<generated>) ~[classes/:na]
+	at com.hubei.web.admin.controller.ContentController.updateContent(ContentController.java:86) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 1' at line 19
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_151]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_151]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2487) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197) ~[mysql-connector-java-5.1.44.jar:5.1.44]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.6.jar:1.1.6]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498) ~[druid-1.1.6.jar:1.1.6]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) ~[mybatis-3.4.4.jar:3.4.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	... 69 common frames omitted
+
+2018-03-17 00:14:10.139  INFO 8802 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Fri Mar 16 22:57:36 CST 2018]; root of context hierarchy
+2018-03-17 00:14:10.143  INFO 8802 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-17 00:14:10.143  INFO 8802 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-03-17 00:14:10.151  INFO 8802 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-03-17 00:14:43.072  INFO 8870 --- [main] com.hubei.web.admin.ApplicationStarter   : Starting ApplicationStarter on lindseydeMacBook-Pro.local with PID 8870 (/Users/lindseykong/git/code/web/web/admin/target/classes started by lindseykong in /Users/lindseykong/git/code/web/web)
+2018-03-17 00:14:43.077  INFO 8870 --- [main] com.hubei.web.admin.ApplicationStarter   : The following profiles are active: dev
+2018-03-17 00:14:43.145  INFO 8870 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Sat Mar 17 00:14:43 CST 2018]; root of context hierarchy
+2018-03-17 00:14:43.652  INFO 8870 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [application-context.xml]
+2018-03-17 00:14:43.938  WARN 8870 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubei.web.admin]' package. Please check your configuration.
+2018-03-17 00:14:43.985  INFO 8870 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-17 00:14:44.418  INFO 8870 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$71117269] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-17 00:14:44.897  INFO 8870 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8123 (http)
+2018-03-17 00:14:44.909  INFO 8870 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-17 00:14:44.910  INFO 8870 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-03-17 00:14:45.011  INFO 8870 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring embedded WebApplicationContext
+2018-03-17 00:14:45.012  INFO 8870 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1869 ms
+2018-03-17 00:14:45.141  INFO 8870 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-17 00:14:45.146  INFO 8870 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-17 00:14:45.146  INFO 8870 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-17 00:14:45.146  INFO 8870 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-17 00:14:45.146  INFO 8870 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-17 00:14:45.363  INFO 8870 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-17 00:14:45.951  INFO 8870 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Sat Mar 17 00:14:43 CST 2018]; root of context hierarchy
+2018-03-17 00:14:46.022  INFO 8870 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ContentVo>> com.hubei.web.admin.controller.ContentController.queryList(com.hubei.web.admin.controller.request.ContentQueryVo)
+2018-03-17 00:14:46.023  INFO 8870 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectCount]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.ContentController.selectCount(com.hubei.web.admin.controller.request.ContentQueryVo)
+2018-03-17 00:14:46.023  INFO 8870 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/insertContent]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.ContentController.insertContent(com.hubei.web.admin.controller.request.ContentInsertRequest)
+2018-03-17 00:14:46.024  INFO 8870 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/updateContent]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.ContentController.updateContent(com.hubei.web.admin.controller.request.ContentInsertRequest)
+2018-03-17 00:14:46.024  INFO 8870 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/upload]}" onto public com.hubei.base.ApiResponse<java.lang.String> com.hubei.web.admin.controller.ContentController.uploadImage(org.springframework.web.multipart.MultipartFile)
+2018-03-17 00:14:46.024  INFO 8870 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public com.hubei.base.ApiResponse<com.hubei.web.admin.controller.response.LoginResponse> com.hubei.web.admin.controller.LoginController.login(com.hubei.web.admin.controller.request.LoginDataRequest)
+2018-03-17 00:14:46.026  INFO 8870 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/selectCount]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.MenuController.selectCount(com.hubei.web.admin.controller.request.MenuQueryVo)
+2018-03-17 00:14:46.026  INFO 8870 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.MenuVo>> com.hubei.web.admin.controller.MenuController.selectList(com.hubei.web.admin.controller.request.MenuQueryVo)
+2018-03-17 00:14:46.026  INFO 8870 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/queryParentMenu]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ParentMenuVo>> com.hubei.web.admin.controller.MenuController.queryParentMenu()
+2018-03-17 00:14:46.026  INFO 8870 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/queryMenuListForContent]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ContentMenuVo>> com.hubei.web.admin.controller.MenuController.queryMenuListForContent()
+2018-03-17 00:14:46.027  INFO 8870 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/insertMenu]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.MenuController.insertMenu(com.hubei.web.admin.controller.request.MenuInsertRequest)
+2018-03-17 00:14:46.027  INFO 8870 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/info]}" onto public com.hubei.base.ApiResponse<com.hubei.web.admin.controller.response.UserDataResponse> com.hubei.web.admin.controller.UserController.getUserInfo()
+2018-03-17 00:14:46.029  INFO 8870 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-17 00:14:46.029  INFO 8870 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-17 00:14:46.057  INFO 8870 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-17 00:14:46.057  INFO 8870 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-17 00:14:46.074  INFO 8870 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandlerAdvice
+2018-03-17 00:14:46.095  INFO 8870 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-17 00:14:51.638  INFO 8870 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Sat Mar 17 00:14:43 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-03-17 00:14:51.640  INFO 8870 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-17 00:14:51.665  WARN 8870 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2018-03-17 00:14:51.899  INFO 8870 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-17 00:14:51.900  INFO 8870 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-17 00:14:51.907  INFO 8870 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-17 00:14:51.967  INFO 8870 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8123 (http)
+2018-03-17 00:14:51.973  INFO 8870 --- [main] com.hubei.web.admin.ApplicationStarter   : Started ApplicationStarter in 19.251 seconds (JVM running for 30.003)
+2018-03-17 00:16:49.151  INFO 8870 --- [http-nio-8123-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-17 00:16:49.152  INFO 8870 --- [http-nio-8123-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-17 00:16:49.173  INFO 8870 --- [http-nio-8123-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-03-17 07:18:11.134  INFO 8870 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Sat Mar 17 00:14:43 CST 2018]; root of context hierarchy
+2018-03-17 07:18:11.166  INFO 8870 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-17 07:18:11.167  INFO 8870 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-03-17 07:18:11.183  INFO 8870 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-03-17 08:24:01.329  INFO 9384 --- [main] com.hubei.web.admin.ApplicationStarter   : Starting ApplicationStarter on lindseydeMacBook-Pro.local with PID 9384 (/Users/lindseykong/git/code/web/web/admin/target/classes started by lindseykong in /Users/lindseykong/git/code/web/web)
+2018-03-17 08:24:01.334  INFO 9384 --- [main] com.hubei.web.admin.ApplicationStarter   : The following profiles are active: dev
+2018-03-17 08:24:01.398  INFO 9384 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Sat Mar 17 08:24:01 CST 2018]; root of context hierarchy
+2018-03-17 08:24:01.895  INFO 9384 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [application-context.xml]
+2018-03-17 08:24:02.172  WARN 9384 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubei.web.admin]' package. Please check your configuration.
+2018-03-17 08:24:02.223  INFO 9384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-17 08:24:02.697  INFO 9384 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c69718d5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-17 08:24:03.275  INFO 9384 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8123 (http)
+2018-03-17 08:24:03.287  INFO 9384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-17 08:24:03.288  INFO 9384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-03-17 08:24:03.402  INFO 9384 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/admin]  : Initializing Spring embedded WebApplicationContext
+2018-03-17 08:24:03.403  INFO 9384 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2008 ms
+2018-03-17 08:24:03.536  INFO 9384 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-17 08:24:03.542  INFO 9384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-17 08:24:03.543  INFO 9384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-17 08:24:03.544  INFO 9384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-17 08:24:03.544  INFO 9384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-17 08:24:03.765  INFO 9384 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-17 08:24:04.354  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Sat Mar 17 08:24:01 CST 2018]; root of context hierarchy
+2018-03-17 08:24:04.402  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ContentVo>> com.hubei.web.admin.controller.ContentController.queryList(com.hubei.web.admin.controller.request.ContentQueryVo)
+2018-03-17 08:24:04.403  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/selectCount]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.ContentController.selectCount(com.hubei.web.admin.controller.request.ContentQueryVo)
+2018-03-17 08:24:04.403  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/insertContent]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.ContentController.insertContent(com.hubei.web.admin.controller.request.ContentInsertRequest)
+2018-03-17 08:24:04.403  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/updateContent]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.ContentController.updateContent(com.hubei.web.admin.controller.request.ContentInsertRequest)
+2018-03-17 08:24:04.404  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/content/upload]}" onto public com.hubei.base.ApiResponse<java.lang.String> com.hubei.web.admin.controller.ContentController.uploadImage(org.springframework.web.multipart.MultipartFile)
+2018-03-17 08:24:04.404  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public com.hubei.base.ApiResponse<com.hubei.web.admin.controller.response.LoginResponse> com.hubei.web.admin.controller.LoginController.login(com.hubei.web.admin.controller.request.LoginDataRequest)
+2018-03-17 08:24:04.405  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/queryParentMenu]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ParentMenuVo>> com.hubei.web.admin.controller.MenuController.queryParentMenu()
+2018-03-17 08:24:04.406  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/queryMenuListForContent]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.ContentMenuVo>> com.hubei.web.admin.controller.MenuController.queryMenuListForContent()
+2018-03-17 08:24:04.407  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/insertMenu]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.MenuController.insertMenu(com.hubei.web.admin.controller.request.MenuInsertRequest)
+2018-03-17 08:24:04.407  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/selectCount]}" onto public com.hubei.base.ApiResponse<java.lang.Integer> com.hubei.web.admin.controller.MenuController.selectCount(com.hubei.web.admin.controller.request.MenuQueryVo)
+2018-03-17 08:24:04.407  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/menu/selectList]}" onto public com.hubei.base.ApiResponse<java.util.List<com.hubei.web.admin.controller.response.MenuVo>> com.hubei.web.admin.controller.MenuController.selectList(com.hubei.web.admin.controller.request.MenuQueryVo)
+2018-03-17 08:24:04.408  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/info]}" onto public com.hubei.base.ApiResponse<com.hubei.web.admin.controller.response.UserDataResponse> com.hubei.web.admin.controller.UserController.getUserInfo()
+2018-03-17 08:24:04.410  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-17 08:24:04.411  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-17 08:24:04.436  INFO 9384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-17 08:24:04.436  INFO 9384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-17 08:24:04.452  INFO 9384 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandlerAdvice
+2018-03-17 08:24:04.471  INFO 9384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-17 08:24:10.006  INFO 9384 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Sat Mar 17 08:24:01 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-03-17 08:24:10.007  INFO 9384 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-03-17 08:24:10.034  WARN 9384 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2018-03-17 08:24:10.275  INFO 9384 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-17 08:24:10.277  INFO 9384 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-17 08:24:10.288  INFO 9384 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-17 08:24:10.352  INFO 9384 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8123 (http)
+2018-03-17 08:24:10.356  INFO 9384 --- [main] com.hubei.web.admin.ApplicationStarter   : Started ApplicationStarter in 19.411 seconds (JVM running for 30.145)
+2018-03-17 08:28:18.855  INFO 9384 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b7f657: startup date [Sat Mar 17 08:24:01 CST 2018]; root of context hierarchy
+2018-03-17 08:28:18.873  INFO 9384 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-17 08:28:18.873  INFO 9384 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-03-17 08:28:18.876  INFO 9384 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

@@ -17,8 +17,15 @@ public class IndexController {
     @RequestMapping("/index")
     public ModelAndView index(ModelAndView modelAndView){
         modelAndView.setViewName("index");
-        ContentDataVo contentDataVo =  indexService.obtainIndexData();
-        modelAndView.addObject("countDataVo",contentDataVo);
+        ContentDataVo contentDataVo =  indexService.obtainIndexData(null);
+        modelAndView.addObject("contentDataVo",contentDataVo);
         return  modelAndView;
    }
+    @RequestMapping("/menu")
+    public ModelAndView index(Integer menuId,ModelAndView modelAndView){
+        modelAndView.setViewName("index");
+        ContentDataVo contentDataVo =  indexService.obtainIndexData(menuId);
+        modelAndView.addObject("contentDataVo",contentDataVo);
+        return  modelAndView;
+    }
 }

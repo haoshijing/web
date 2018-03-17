@@ -28,6 +28,7 @@
         sort,
         status,
         menuId,
+        webPrice,
         insertTime,
         lastUpdateTime
         )
@@ -39,12 +40,13 @@
         #{sort},
         #{status},
         #{menuId},
+        #{webPrice},
         #{insertTime},
         #{lastUpdateTime}
         )
     </insert>
 
-    <update id="updateById" parameterType="ContentPo">
+    <update id="update" parameterType="ContentPo">
         update <include refid="tableName"/>
         <set>
             <if test = "image != null">
@@ -56,6 +58,17 @@
             <if test = "url != null">
                 url = #{url},
             </if>
+
+            <if test = "menuId != null">
+                menuId = #{menuId},
+            </if>
+            <if test = "webPrice != null">
+                webPrice = #{webPrice},
+            </if>
+            <if test = "sort != null">
+                sort = #{sort}
+            </if>
+            where id = #{id}
         </set>
     </update>
 
