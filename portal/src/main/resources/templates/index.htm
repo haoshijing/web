@@ -88,7 +88,11 @@
             <#list contentDataVo.parentMenus as item >
             <li>
                 <div class="menu">
-                    <h2 class="menu-title">${item.menuName}</h2>
+                    <h2 class="menu-title">
+                        <a href="${request.contextPath}/menu?menuId=${item.menuId}">
+                            ${item.menuName}
+                        </a>
+                    </h2>
                     <ul class="menu-dropdown">
                         <#list item.subMenuList as subItem>
                             <li><a href="${request.contextPath}/menu?menuId=${subItem.menuId}">${subItem.menuName}</a></li>

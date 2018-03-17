@@ -7,6 +7,7 @@ import com.hubei.base.po.MenuPo;
 import com.hubei.web.portal.vo.ContentDataVo;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -18,8 +19,12 @@ public class IndexService {
     @Autowired
     MenuMapper menuMapper;
 
+    @Value("${imageHost}")
+    private String imageHost;
+
     @Autowired
     ContentMapper contentMapper;
+
     public ContentDataVo obtainIndexData(Integer menuId) {
         MenuPo queryMenuPo = new MenuPo();
         queryMenuPo.setParentId(0);
@@ -48,39 +53,48 @@ public class IndexService {
         ContentDataVo contentDataVo = new ContentDataVo();
         contentDataVo.setParentMenus(parentMenus);
 
-        if(menuPoList.size() > 0) {
-            int index  = 0;
-            if(menuId != null){
-                for(ContentDataVo.MenuVo menuVo: parentMenus){
-                    if(menuVo.getMenuId().equals(menuId)){
+        if (menuPoList.size() > 0) {
+            int index = 0;
+            if (menuId != null) {
+                for (ContentDataVo.MenuVo menuVo : parentMenus) {
+                    if (menuVo.getMenuId().equals(menuId)) {
                         break;
                     }
                     index++;
                 }
             }
-            ContentDataVo.MenuVo indexVo = parentMenus.get(0);
+            ContentDataVo.MenuVo indexVo = parentMenus.get(index);
             List<ContentDataVo.MenuVo> subMenuVos = indexVo.getSubMenuList();
-            List<ContentDataVo.ContentListVo> contentListVos =
-                    subMenuVos.stream().map(subMenuVo -> {
-                        ContentDataVo.ContentListVo contentListVo = new ContentDataVo.ContentListVo();
-                        contentListVo.setMenuName(subMenuVo.getMenuName());
-                        ContentPo queryContentPo = new ContentPo();
-                        queryContentPo.setMenuId(subMenuVo.getMenuId());
-                        queryContentPo.setLimit(10);
-                        List<ContentPo> contentPos = contentMapper.selectList(queryContentPo);
-                        List<ContentDataVo.ContentVo> contentVos = contentPos.stream().map(
-                                contentPo -> {
-                                    ContentDataVo.ContentVo contentVo = new ContentDataVo.ContentVo();
-                                    BeanUtils.copyProperties(contentPo,contentVo);
-                                    return contentVo;
-                                }
-                        ).collect(Collectors.toList());
-                        contentListVo.setContentVos(contentVos);
-                        return contentListVo;
-                    }).collect(Collectors.toList());
+            List<ContentDataVo.ContentListVo> contentListVos = obtainContentVoList(subMenuVos);
             contentDataVo.setContentListVos(contentListVos);
         }
 
         return contentDataVo;
+    }
+
+    private List<ContentDataVo.ContentListVo> obtainContentVoList(List<ContentDataVo.MenuVo> subMenuVos) {
+        List<ContentDataVo.ContentListVo> contentListVos =
+                subMenuVos.stream().map(subMenuVo -> {
+                    ContentDataVo.ContentListVo contentListVo = new ContentDataVo.ContentListVo();
+                    contentListVo.setMenuName(subMenuVo.getMenuName());
+                    ContentPo queryContentPo = new ContentPo();
+                    queryContentPo.setMenuId(subMenuVo.getMenuId());
+                    queryContentPo.setLimit(10);
+                    List<ContentPo> contentPos = contentMapper.selectList(queryContentPo);
+                    List<ContentDataVo.ContentVo> contentVos = contentPos.stream().map(
+                            contentPo -> {
+                                ContentDataVo.ContentVo contentVo = new ContentDataVo.ContentVo();
+                                BeanUtils.copyProperties(contentPo, contentVo);
+                                StringBuilder sb = new StringBuilder();
+                                sb.append(imageHost).append("/").append(contentPo.getImage());
+                                contentVo.setImage(sb.toString());
+                                return contentVo;
+                            }
+                    ).collect(Collectors.toList());
+                    contentListVo.setContentVos(contentVos);
+                    return contentListVo;
+                }).collect(Collectors.toList());
+        return contentListVos;
+
     }
 }

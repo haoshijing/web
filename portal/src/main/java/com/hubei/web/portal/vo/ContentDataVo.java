@@ -22,6 +22,7 @@ public class ContentDataVo {
         private String name;
         private String url;
         private String link;
+        private String image;
         private Integer webPrice;
     }
     @Data
