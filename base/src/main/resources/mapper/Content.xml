@@ -28,7 +28,6 @@
         sort,
         status,
         menuId,
-        webPrice,
         insertTime,
         lastUpdateTime
         )
@@ -40,7 +39,6 @@
         #{sort},
         #{status},
         #{menuId},
-        #{webPrice},
         #{insertTime},
         #{lastUpdateTime}
         )
@@ -62,9 +60,7 @@
             <if test = "menuId != null">
                 menuId = #{menuId},
             </if>
-            <if test = "webPrice != null">
-                webPrice = #{webPrice},
-            </if>
+
             <if test = "sort != null">
                 sort = #{sort}
             </if>
