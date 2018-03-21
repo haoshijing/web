@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface MenuMapper extends BaseMapper<MenuPo> {
     List<MenuPo> queryMenuListForContent();
+
+    Integer updateStatus(Integer menuId);
 }

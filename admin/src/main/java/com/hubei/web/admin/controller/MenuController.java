@@ -44,6 +44,12 @@ public class MenuController {
         Integer count = menuService.selectCount(menuQueryVo);
         return new ApiResponse<>(count);
     }
+    @RequestMapping("/updateStatus")
+    public ApiResponse<Integer> updateStatus(Integer menuId){
+       Integer updateRet = menuService.updateStatus(menuId);
+        return  new ApiResponse<>(updateRet);
+    }
+
     @RequestMapping("/queryParentMenu")
     public ApiResponse<List<ParentMenuVo>> queryParentMenu(){
         List<ParentMenuVo> menuPos = menuService.queryParentMenus();

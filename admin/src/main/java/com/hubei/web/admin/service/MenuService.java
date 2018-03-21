@@ -98,4 +98,8 @@ public class MenuService {
         }).collect(Collectors.toList());
         return  contentMenuVos;
     }
+
+    public Integer updateStatus(Integer menuId) {
+        return  menuMapper.updateStatus(menuId);
+    }
 }

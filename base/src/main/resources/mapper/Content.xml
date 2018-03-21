@@ -95,4 +95,9 @@
         FROM <include refid="tableName"/>
         where id = #{id} and status = 1
     </select>
+
+    <update id="updateStatus"  parameterType="ContentPo" >
+        update <include refid="tableName"/>
+        set status = 2 where id = #{id}
+    </update>
 </mapper>
