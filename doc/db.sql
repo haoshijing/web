@@ -36,5 +36,4 @@ lastUpdateTime bigint comment '最后修改时间'
 
 
 alter table t_content add column webPrice int comment '网站价格' DEFAULT 0;
-alter table t_content add column webPrice int comment '网站价格' DEFAULT 0;
-alter table t_content add column webPrice int comment '网站价格' DEFAULT 0;
+alter table t_content add column adminUrl varchar(512) comment '后台地址' DEFAULT '';

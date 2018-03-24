@@ -28,6 +28,7 @@
         sort,
         status,
         menuId,
+        adminUrl,
         insertTime,
         lastUpdateTime
         )
@@ -39,6 +40,7 @@
         #{sort},
         #{status},
         #{menuId},
+        #{adminUrl},
         #{insertTime},
         #{lastUpdateTime}
         )
@@ -63,6 +65,9 @@
 
             <if test = "sort != null">
                 sort = #{sort}
+            </if>
+            <if test = "adminUrl != null">
+                adminUrl = #{adminUrl}
             </if>
             where id = #{id}
         </set>

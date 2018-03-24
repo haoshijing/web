@@ -172,7 +172,7 @@
                         <ul class="menu-dropdown">
                             <#list item.subMenuList as subItem>
                                 <li>
-                                    <a href="${request.contextPath}/more?menuId=${subItem.menuId}">${subItem.menuName}</a>
+                                    <a href="${request.contextPath}/menu?menuId=${subItem.menuId}">${subItem.menuName}</a>
                                 </li>
                             </#list>
                         </ul>
@@ -189,50 +189,59 @@
 <div class="wbycompany"></div>
 
 <!--企业网站模板start-->
-<#list contentDataVo.contentListVos as item>
+<div class="wrap">
+    <div class="contain">
+        <style>
+            .lie{overflow: hidden; border-bottom:1px solid #EEE;}
 
-    <div class="wbytit"></a>
-        </span><i><img src="${request.contextPath}/indeximage/55baf1433e133.png" width="40" height="40">
-        </i>${item.menuName}
-    </div>
-
-    <div class="floor i-f10">
-
-        <div class="wrap">
-
-            <div class="contain">
-                <div class="lie">
-                    <!--循环portfoliolist-->
-                    <#list item.contentVos as contentVo>
-                        <div class="portfoliolist">
-                            <div class="portfolio black mix_all" data-cat="black"
-                                 style="display: inline-block;  opacity: 1;">
-                                <section class="cd-section">
-                                    <div class="cd-modal-action">
-                                        <a href="${contentVo.url!''}" target="_blank" class="btn">${contentVo.webPrice!0}</a>
-                                    </div>
-                                </section>
-                                <div class="bg-diy"><span class="bg-img"
-                                                          style="background-image: url(${contentVo.image !''})"></span>
-                                </div>
-                                <div class="tem-title-b">
-                                    <span class="tem-t-t">${contentVo.name!''}</span>
-                                    <span class="tem-t-r"><i style="background-color: #000;"></i><i
-                                            style="background-color: #2c2c2c;"></i><i
-                                            style="background-color: #a0a0a0;"></i></span>
-                                </div>
-                            </div>
+            .lie .biao {float:left;position:relative;margin-right:-1px;margin-bottom:-1px;width:298px;height:298px;border:1px solid #eee;background:#fff; overflow:hidden; margin:8px; padding:2px;}
+            .lie .biao:hover,.lie .biao:hover a{background:#ff5600; color:#fff !important;}
+            .lie .biao img{width: 292px; height: 189px;padding: 3px;}
+            .lie .biao .dk{ margin-top:10px; text-align:center;}
+            .lie .biao .dk .biaoti{ color:#333; font-size:14px;}
+            .lie .biao .dk .song{}
+            .lie .biao .dk .yan{ border:#FFF solid 1px; border-radius:5px; width:100px; margin-top:10px; height:30px; display:block; margin-left:auto; margin-right:auto; text-align:center; line-height:40px;}
+            .lie .biao .dk .yan a{ width:100px; height:30px; line-height:30px;}
+        </style>
+        <#list contentDataVo.contentVos as item>
+        <div class="lie">
+            <div class="biao">
+                <div class="suo">
+                    <a href="${item.url!''}" target="_blank" title="${item.name}">
+                        <img src="${item.image}">
+                        <img src='${request.contextPath}/images/01.png'  style=" margin-top: -195px;">
+                    </a>
+                </div>
+                <div class="dk">
+                    <div class="biaoti">
+                        <a href="${item.url}" target="_blank" title="${item.name}">${item.name}</a>
+                    </div>
+                    <div style="clear:both"></div>
+                    <div style="width: 220px;margin: 0 auto;">
+                        <div class="yan" style="float:left">
+                            <a href="${item.adminUrl}" target="_blank">后台演示</a>
                         </div>
-                    </#list>
+                    </div>
+                    <div style="clear:both"></div>
                 </div>
             </div>
-
-            <div class="clear"></div>
         </div>
-
+        </#list>
     </div>
-
-</#list>
+    <div class="clear"></div>
+</div>
+</div>
+<style>
+    .pagexx{clear:both; height:30px; overflow:hidden; width:1280px; margin:auto;;}
+    .mbbody_body .pagexx{margin-left:20px;}
+    .pagexx ul{font:12px/1 "microsoft yahei";}
+    .pagexx ul li{float:left; border:1px solid #ccc; padding:2px 9px; margin:0 3px; line-height:20px ;background:#fff;}
+    .pagexx ul li.thisclass{display:inline-block ;border:1px solid #2061c4; padding:2px 9px; margin:0 3px; background:#2061c4; color:#fff;}
+    .pagexx ul li.thisclass a{color:#fff;}
+    .pagexx ul li a{text-decoration:none; color:#2061c4;}
+    .pagexx ul li a:hover{text-decoration:none; color:#2061c4;}
+    .pagexx ul li span{display:inline-block; padding:0;}
+</style>
 <div class="clear"></div>
 
 <a name="contact" id="contact"></a>

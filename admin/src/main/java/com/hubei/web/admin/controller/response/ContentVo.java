@@ -13,4 +13,5 @@ public class ContentVo {
     private Integer id;
     private Integer sort;
     private Integer webPrice;
+    private String adminUrl;
 }
