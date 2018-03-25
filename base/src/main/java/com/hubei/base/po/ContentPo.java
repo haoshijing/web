@@ -11,7 +11,6 @@ public class ContentPo extends BaseQueryPo{
     private Integer status;
     private Long insertTime;
     private Long lastUpdateTime;
-    private Integer webPrice;
     private String adminUrl;
     private Integer sort = 0;
     /**

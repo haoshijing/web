@@ -19,25 +19,25 @@
 <!--Detail Page Start-->
 <header class="active" style="height: 588px;">
     <div class="box">
-	    <a href="http://omg666.com/" title="恒博科技">
-            <img src="./天恒博娱_files/55964f7cf1cf6.png"></a>
+	    <a href="${request.contextPath}" title="恒博科技">
+            <img src="${request.contextPath}/images/55964f7cf1cf6.png"></a>
         <div class="wechat">
-    	    <img src="images//wechat_code.jpg" alt="扫描关注恒博微信公众账号" class="wechat">
+    	    <img src="${request.contextPath}/images/wechat_code.jpg" alt="扫描关注恒博微信公众账号" class="wechat">
             <p>扫一扫微信二维码<i></i></p>
         </div>
 
     </div>
     <footer>
 	  <a href="tencent://message/?uin=2585992058&amp;Menu=yes" target="_blank">
-          <img src="images//qq.gif"></a><br><u>2009 - 2018</u><br>
-        <a href="http://www.hb9418.com/" target="_blank">天恒博娱有限公司</a>
+          <img src="${request.contextPath}/images/qq.gif"></a><br><u>2009 - 2018</u><br>
+        <a href="${request.contextPath}" target="_blank">天恒博娱有限公司</a>
     </footer>
 </header>
 
     <section class="caseshow content active" style="width: 1109px;">
                   <div class="words">
-        	<h1>[ 澳门银河（新） ]</h1>
-        	<span class="rel">商业源码<u>•</u><a href="http://omg666.com/a/cases/edu/" target="_blank" title="WAP源码">WAP源码</a></span>
+        	<h1>${contentDetailVo.name!}</h1>
+
         </div>
 
 
@@ -51,7 +51,7 @@
 #line{width:100%; height:100px; background-color:#FF6600; position:relative;}
 #line h3{ line-height:100px; font-size:18px; text-align:center; color:#FFFFFF;font-family:"黑体"}
 #line .lg {
-    background: url(images/btn_login.png) no-repeat scroll left top;
+    background: url(${request.contextPath}/images/btn_login.png) no-repeat scroll left top;
     border: 0 none;
     color: #161616;
     cursor: pointer;
@@ -66,7 +66,7 @@
 }
 #line .lg a{text-decoration:none; color:#666;font-family:"黑体";font-size:13px;}
 #line .lg:hover {
-    background: url(/dede/images/btn_login.png) no-repeat scroll left bottom;
+    background: url(${request.contextPath}/images/btn_login.png) no-repeat scroll left bottom;
     border: 0 none;
     color: #161616;
     cursor: pointer;
@@ -84,13 +84,13 @@
 			<a href="tencent://message/?uin=2585992058&amp;Menu=yes" target="_blank">我要定制</a></p>
 	</div>
 	<div class="live">
-		<a class="play" href="http://yh.omg666.com/" target="_blank">点击进入演示站</a>
-        <a class="play" href="http://yh.omg666.com/admin" target="_blank">点击进入后台</a>
+		<a class="play" href="${contentDetailVo.url!''}" target="_blank">点击进入演示站</a>
+        <a class="play" href="${contentDetailVo.adminUrl!''}" target="_blank">点击进入后台</a>
     </div>
-	<img alt="" src="images//amyh1.jpg" class="img-responsive">
-    <img alt="" src="images//amyh2.jpg" class="img-responsive">
-    <img alt="" src="images//amyh3.jpg" class="img-responsive">
-    <img alt="" src="images//amyh4.jpg" class="img-responsive">
+	<img alt="" src="${request.contextPath}/images/amyh1.jpg" class="img-responsive">
+    <img alt="" src="${request.contextPath}/images//amyh2.jpg" class="img-responsive">
+    <img alt="" src="${request.contextPath}/images//amyh3.jpg" class="img-responsive">
+    <img alt="" src="${request.contextPath}/images//amyh4.jpg" class="img-responsive">
     </div>
 
         </div>

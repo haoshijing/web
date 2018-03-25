@@ -150,6 +150,8 @@ public class IndexService {
 
     public ContentDetailVo contentDetail(Integer id) {
         ContentDetailVo contentDetailVo = new ContentDetailVo();
+        ContentPo contentPo = contentMapper.selectById(id);
+        BeanUtils.copyProperties(contentPo,contentDetailVo);
         return contentDetailVo;
     }
 }
