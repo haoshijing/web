@@ -11,6 +11,7 @@ import com.hubei.web.admin.service.ContentService;
 import com.hubei.web.admin.util.FileUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -87,6 +88,13 @@ public class ContentController {
         Integer count = contentService.update(request);
         return new ApiResponse<>(count);
     }
+
+    @RequestMapping("/deleteContent/{id}")
+    public ApiResponse<Integer> updateContent(@PathVariable String id){
+        Integer count = contentService.delete(Integer.valueOf(id));
+        return new ApiResponse<>(count);
+    }
+
 
     @RequestMapping("/upload")
     public ApiResponse<String> uploadImage(MultipartFile image){

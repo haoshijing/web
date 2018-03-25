@@ -40,8 +40,5 @@ alter table t_content add column adminUrl varchar(512) comment '后台地址' DE
 drop TABLE IF EXISTS t_system_setting;
 create table t_system_setting(
 id int primary key auto_increment comment '主键id',
-key varchar(200) comment '系统参数key',
-val varchar(200) comment '系统值',
-insertTime bigint comment '写入时间',
-lastUpdateTime bigint comment '最后修改时间'
+qq varchar(200) comment '联系qq'
 );

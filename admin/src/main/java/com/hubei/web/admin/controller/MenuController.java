@@ -15,6 +15,7 @@ import com.hubei.web.admin.controller.response.ParentMenuVo;
 import com.hubei.web.admin.service.MenuService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -44,9 +45,9 @@ public class MenuController {
         Integer count = menuService.selectCount(menuQueryVo);
         return new ApiResponse<>(count);
     }
-    @RequestMapping("/updateStatus")
-    public ApiResponse<Integer> updateStatus(Integer menuId){
-       Integer updateRet = menuService.updateStatus(menuId);
+    @RequestMapping("/updateStatus/{id}")
+    public ApiResponse<Integer> updateStatus(@PathVariable  String id){
+       Integer updateRet = menuService.updateStatus(Integer.valueOf(id));
         return  new ApiResponse<>(updateRet);
     }
 

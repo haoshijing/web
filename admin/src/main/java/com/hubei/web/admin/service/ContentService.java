@@ -47,4 +47,8 @@ public class ContentService {
         return contentMapper.update(updatePo);
 
     }
+
+    public Integer delete(Integer id) {
+        return contentMapper.updateStatus(id);
+    }
 }
