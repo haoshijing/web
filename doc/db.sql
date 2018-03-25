@@ -37,3 +37,11 @@ lastUpdateTime bigint comment '最后修改时间'
 
 alter table t_content add column webPrice int comment '网站价格' DEFAULT 0;
 alter table t_content add column adminUrl varchar(512) comment '后台地址' DEFAULT '';
+drop TABLE IF EXISTS t_system_setting;
+create table t_system_setting(
+id int primary key auto_increment comment '主键id',
+key varchar(200) comment '系统参数key',
+val varchar(200) comment '系统值',
+insertTime bigint comment '写入时间',
+lastUpdateTime bigint comment '最后修改时间'
+);

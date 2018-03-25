@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hubei.base.mapper.impl.SystemSettingMapper">
+    <sql id="all_columns">
+        *
+    </sql>
+    <sql id = "tableName">
+        t_system_setting
+    </sql>
+
+
+    <insert id="update" parameterType="SystemSetting">
+        INSERT INTO <include refid="tableName"/>
+        (
+        key,
+        val,
+        sort,
+        status,
+        insertTime,
+        lastUpdateTime
+        )
+        VALUES
+        (
+        #{menuName},
+        #{parentId},
+        #{sort},
+        #{status},
+        #{insertTime},
+        #{lastUpdateTime}
+        )
+    </insert>
+    <select id = "selectById" resultType="MenuPo">
+        select  <include refid="all_columns"/>
+        FROM <include refid="tableName"/>
+        where id = #{id}      AND STATUS = 1
+    </select>
+    <select id="selectList" parameterType="MenuPo" resultType="MenuPo">
+        select <include refid="all_columns"/>
+        FROM <include refid="tableName"/>
+        <where>
+            Status = 1
+            <include refid="queryWhere"/>
+        </where>
+    </select>
+    <select id="selectCount" parameterType="MenuPo" resultType="java.lang.Integer">
+        select count(1)
+        FROM <include refid="tableName"/>
+        <where>
+            Status = 1
+            <include refid="queryWhere"/>
+        </where>
+    </select>
+
+    <select id="queryMenuListForContent" resultType="MenuPo">
+        select id  ,parentId , menuName from t_menu where parentId   <![CDATA[ <> 0   ]]>
+    </select>
+
+
+    <update id="updateStatus"  parameterType="ContentPo" >
+        update <include refid="tableName"/>
+        set status = 2 where id = #{id}
+    </update>
+</mapper>

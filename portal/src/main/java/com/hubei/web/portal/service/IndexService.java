@@ -5,6 +5,7 @@ import com.hubei.base.mapper.impl.MenuMapper;
 import com.hubei.base.po.ContentPo;
 import com.hubei.base.po.MenuPo;
 import com.hubei.web.portal.vo.ContentDataVo;
+import com.hubei.web.portal.vo.ContentDetailVo;
 import com.hubei.web.portal.vo.MoreContentDataVo;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -145,5 +146,10 @@ public class IndexService {
         ).collect(Collectors.toList());
         moreContentDataVo.setContentVos(contentVos);
         return moreContentDataVo;
+    }
+
+    public ContentDetailVo contentDetail(Integer id) {
+        ContentDetailVo contentDetailVo = new ContentDetailVo();
+        return contentDetailVo;
     }
 }
