@@ -157,6 +157,24 @@ public class IndexService {
         return moreContentDataVo;
     }
 
+
+    public ContentDetailVo contentDetail(Integer id) {
+        ContentDetailVo contentDetailVo = new ContentDetailVo();
+        ContentPo contentPo = contentMapper.selectById(id);
+        BeanUtils.copyProperties(contentPo,contentDetailVo);
+        contentPo.setDetailImage1(buildImage(contentPo.getDetailImage1()));
+        contentPo.setDetailImage2(buildImage(contentPo.getDetailImage2()));
+        contentPo.setDetailImage3(buildImage(contentPo.getDetailImage3()));
+        contentPo.setDetailImage4(buildImage(contentPo.getDetailImage4()));
+        contentPo.setDetailImage5(buildImage(contentPo.getDetailImage5()));
+        contentPo.setFuncImage1(buildImage(contentPo.getFuncImage1()));
+        contentPo.setFuncImage2(buildImage(contentPo.getFuncImage2()));
+        contentPo.setFuncImage3(buildImage(contentPo.getFuncImage3()));
+        contentPo.setFuncImage4(buildImage(contentPo.getFuncImage4()));
+        contentPo.setFuncImage5(buildImage(contentPo.getFuncImage5()));
+        return contentDetailVo;
+    }
+
     private String buildImage(String image){
         if(image != null){
             StringBuilder sb = new StringBuilder();
@@ -164,12 +182,5 @@ public class IndexService {
             return  sb.toString();
         }
         return  null;
-    }
-
-    public ContentDetailVo contentDetail(Integer id) {
-        ContentDetailVo contentDetailVo = new ContentDetailVo();
-        ContentPo contentPo = contentMapper.selectById(id);
-        BeanUtils.copyProperties(contentPo,contentDetailVo);
-        return contentDetailVo;
     }
 }
