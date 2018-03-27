@@ -86,7 +86,7 @@
 	<div class="live">
 		<a class="play" href="${contentDetailVo.url!''}" target="_blank">点击进入演示站</a>
         <a class="play" href="${contentDetailVo.adminUrl!''}" target="_blank">点击进入后台</a>
-        <a class="play" href="#" target="_blank">功能展示</a>
+        <a class="play" href="${request.contextPath}/func/${contentDetailVo.id!0}" target="_blank">功能展示</a>
     </div>
     <#if contentDetailVo.detailImage1 ??>
 	<img alt="" src="${contentDetailVo.detailImage1}" class="img-responsive">

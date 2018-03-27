@@ -32,6 +32,13 @@ public class IndexController {
        modelAndView.addObject("contentDetailVo",contentDetailVo);
        return  modelAndView;
    }
+    @RequestMapping("/func/{id}")
+    public ModelAndView func(@PathVariable Integer id,ModelAndView modelAndView){
+        modelAndView.setViewName("func");
+        ContentDetailVo contentDetailVo =  indexService.contentDetail(id);
+        modelAndView.addObject("contentDetailVo",contentDetailVo);
+        return  modelAndView;
+    }
     @RequestMapping("/menu")
     public ModelAndView index(Integer menuId,ModelAndView modelAndView){
         modelAndView.setViewName("index");
@@ -40,11 +47,4 @@ public class IndexController {
         return  modelAndView;
     }
 
-    @RequestMapping("/more")
-    public ModelAndView more(Integer menuId,ModelAndView modelAndView){
-        modelAndView.setViewName("more");
-        MoreContentDataVo contentDataVo =  indexService.more(menuId);
-        modelAndView.addObject("contentDataVo",contentDataVo);
-        return  modelAndView;
-    }
 }

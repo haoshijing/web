@@ -23,4 +23,5 @@ public class ContentDetailVo {
      */
     private String name;
 
+    private Integer id;
 }

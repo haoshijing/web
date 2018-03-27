@@ -4990,3 +4990,7 @@ FTL stack trace ("~" means nesting-related):
 2018-03-26 07:01:05.331  INFO 22524 --- [http-nio-8124-exec-1] o.a.c.c.C.[.[localhost].[/portal]        : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2018-03-26 07:01:05.331  INFO 22524 --- [http-nio-8124-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2018-03-26 07:01:05.350  INFO 22524 --- [http-nio-8124-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-03-27 21:13:33.244  INFO 22524 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@266374ef: startup date [Mon Mar 26 07:00:47 CST 2018]; root of context hierarchy
+2018-03-27 21:13:33.354  INFO 22524 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-27 21:13:33.355  INFO 22524 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-03-27 21:13:33.367  INFO 22524 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
