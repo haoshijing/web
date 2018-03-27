@@ -1,5 +1,6 @@
 package com.hubei.web.portal.service;
 
+import com.google.common.collect.Lists;
 import com.hubei.base.mapper.impl.ContentMapper;
 import com.hubei.base.mapper.impl.MenuMapper;
 import com.hubei.base.po.ContentPo;
@@ -56,15 +57,15 @@ public class IndexService {
         contentDataVo.setParentMenus(parentMenus);
 
         if (menuPoList.size() > 0) {
+
             int index = 0;
-            if (menuId != null) {
-                for (ContentDataVo.MenuVo menuVo : parentMenus) {
-                    if (menuVo.getMenuId().equals(menuId)) {
-                        break;
-                    }
-                    index++;
-                }
+            if(menuId == null){
+                menuId = menuPoList.get(0).getId();
             }
+            List<Integer> menuIds = Lists.newArrayList();
+            MenuPo currentMenuPo = menuMapper.selectById(menuId);
+
+
             ContentDataVo.MenuVo indexVo = parentMenus.get(index);
             List<ContentDataVo.MenuVo> subMenuVos = indexVo.getSubMenuList();
             List<ContentDataVo.ContentListVo> contentListVos = obtainContentVoList(subMenuVos);
@@ -138,14 +139,31 @@ public class IndexService {
                 contentPo -> {
                     ContentDataVo.ContentVo contentVo = new ContentDataVo.ContentVo();
                     BeanUtils.copyProperties(contentPo, contentVo);
-                    StringBuilder sb = new StringBuilder();
-                    sb.append(imageHost).append("/").append(contentPo.getImage());
-                    contentVo.setImage(sb.toString());
+                    contentPo.setImage(buildImage(contentPo.getImage()));
+                    contentPo.setDetailImage1(buildImage(contentPo.getDetailImage1()));
+                    contentPo.setDetailImage2(buildImage(contentPo.getDetailImage2()));
+                    contentPo.setDetailImage3(buildImage(contentPo.getDetailImage3()));
+                    contentPo.setDetailImage4(buildImage(contentPo.getDetailImage4()));
+                    contentPo.setDetailImage5(buildImage(contentPo.getDetailImage5()));
+                    contentPo.setFuncImage1(buildImage(contentPo.getFuncImage1()));
+                    contentPo.setFuncImage2(buildImage(contentPo.getFuncImage2()));
+                    contentPo.setFuncImage3(buildImage(contentPo.getFuncImage3()));
+                    contentPo.setFuncImage4(buildImage(contentPo.getFuncImage4()));
+                    contentPo.setFuncImage5(buildImage(contentPo.getFuncImage5()));
                     return contentVo;
                 }
         ).collect(Collectors.toList());
         moreContentDataVo.setContentVos(contentVos);
         return moreContentDataVo;
+    }
+
+    private String buildImage(String image){
+        if(image != null){
+            StringBuilder sb = new StringBuilder();
+            sb.append(imageHost).append("/").append(image);
+            return  sb.toString();
+        }
+        return  null;
     }
 
     public ContentDetailVo contentDetail(Integer id) {

@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -62,7 +63,6 @@ public class ContentController {
             contentVo.setName(contentPo.getName());
             contentVo.setId(contentPo.getId());
             contentVo.setSort(contentPo.getSort());
-            contentVo.setWebPrice(contentPo.getWebPrice());
             return  contentVo;
         }).collect(Collectors.toList());
         return new ApiResponse<>(contentVos);

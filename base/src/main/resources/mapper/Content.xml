@@ -29,6 +29,16 @@
         status,
         menuId,
         adminUrl,
+        detailImage1,
+        detailImage2,
+        detailImage3,
+        detailImage4,
+        detailImage5,
+        funcImage1,
+        funcImage2,
+        funcImage3,
+        funcImage4,
+        funcImage5,
         insertTime,
         lastUpdateTime
         )
@@ -41,6 +51,16 @@
         #{status},
         #{menuId},
         #{adminUrl},
+        #{detailImage1},
+        #{detailImage2},
+        #{detailImage3},
+        #{detailImage4},
+        #{detailImage5},
+        #{funcImage1},
+        #{funcImage2},
+        #{funcImage3},
+        #{funcImage4},
+        #{funcImage5},
         #{insertTime},
         #{lastUpdateTime}
         )
@@ -68,6 +88,39 @@
             </if>
             <if test = "adminUrl != null">
                 adminUrl = #{adminUrl}
+            </if>
+            <if test = "image != null">
+                image = #{image},
+            </if>
+            <if test = "detailImage1 != null">
+                detailImage1 = #{detailImage1},
+            </if>
+            <if test = "detailImage2 != null">
+                detailImage2 = #{detailImage2},
+            </if>
+            <if test = "detailImage3 != null">
+                detailImage3 = #{detailImage3},
+            </if>
+            <if test = "detailImage4 != null">
+                detailImage4 = #{detailImage4},
+            </if>
+            <if test = "detailImage5 != null">
+                detailImage5 = #{detailImage5},
+             </if>
+            <if test = "funcImage1 != null">
+                funcImage1 = #{funcImage1},
+            </if>
+            <if test = "funcImage1 != null">
+                funcImage2 = #{funcImage2},
+            </if>
+            <if test = "funcImage3 != null">
+                funcImage3 = #{funcImage3},
+            </if>
+            <if test = "funcImage4 != null">
+                funcImage4 = #{funcImage4},
+            </if>
+            <if test = "funcImage5 != null">
+                funcImage5 = #{funcImage5},
             </if>
             where id = #{id}
         </set>

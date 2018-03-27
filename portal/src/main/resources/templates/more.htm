@@ -132,7 +132,7 @@
 
 <div class="headDiv">
     <div class="head">
-        <div class="logo"><a href="https://123.y0060.com/"><img src="${request.contextPath}/indeximage/logo.png"></a>
+        <div class="logo"><a href="${request.contextPath}/portal"><img src="${request.contextPath}/indeximage/logo.png"></a>
         </div>
 
         <div class="logoText3 fr">
@@ -214,12 +214,12 @@
                 </div>
                 <div class="dk">
                     <div class="biaoti">
-                        <a href="${item.url}" target="_blank" title="${item.name}">${item.name}</a>
+                        <a href="${item.url!''}" target="_blank" title="${item.name}">${item.name}</a>
                     </div>
                     <div style="clear:both"></div>
                     <div style="width: 220px;margin: 0 auto;">
                         <div class="yan" style="float:left">
-                            <a href="${item.adminUrl}" target="_blank">后台演示</a>
+                            <a href="${item.adminUrl!''}" target="_blank">后台演示</a>
                         </div>
                     </div>
                     <div style="clear:both"></div>
