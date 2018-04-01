@@ -84,10 +84,10 @@
             </if>
 
             <if test = "sort != null">
-                sort = #{sort}
+                sort = #{sort},
             </if>
             <if test = "adminUrl != null">
-                adminUrl = #{adminUrl}
+                adminUrl = #{adminUrl},
             </if>
             <if test = "image != null">
                 image = #{image},
@@ -110,7 +110,7 @@
             <if test = "funcImage1 != null">
                 funcImage1 = #{funcImage1},
             </if>
-            <if test = "funcImage1 != null">
+            <if test = "funcImage2 != null">
                 funcImage2 = #{funcImage2},
             </if>
             <if test = "funcImage3 != null">
@@ -122,8 +122,9 @@
             <if test = "funcImage5 != null">
                 funcImage5 = #{funcImage5},
             </if>
-            where id = #{id}
+            lastUpdateTime = #{lastUpdateTime} where id = #{id}
         </set>
+
     </update>
 
     <select id="selectList" parameterType="ContentPo" resultType="ContentPo">

@@ -38,9 +38,14 @@ alter table t_content add column webPrice int comment '网站价格' DEFAULT 0;
 alter table t_content add column adminUrl varchar(512) comment '后台地址' DEFAULT '';
 alter table t_content add column detailImage1 varchar(200) comment '详情图片1' DEFAULT '';
 alter table t_content add column detailImage2 varchar(200) comment '详情图片2' DEFAULT '';
-alter table t_content add column detailImage3 varchar(200) comment '详情图片1' DEFAULT '';
-alter table t_content add column detailImage4 varchar(200) comment '详情图片1' DEFAULT '';
-alter table t_content add column detailImage5 varchar(200) comment '详情图片1' DEFAULT '';
+alter table t_content add column detailImage3 varchar(200) comment '详情图片3' DEFAULT '';
+alter table t_content add column detailImage4 varchar(200) comment '详情图片4' DEFAULT '';
+alter table t_content add column detailImage5 varchar(200) comment '详情图片5' DEFAULT '';
+alter table t_content add column funcImage1 varchar(200) comment '详情图片1' DEFAULT '';
+alter table t_content add column funcImage2 varchar(200) comment '详情图片2' DEFAULT '';
+alter table t_content add column funcImage3 varchar(200) comment '详情图片3' DEFAULT '';
+alter table t_content add column funcImage4 varchar(200) comment '详情图片4' DEFAULT '';
+alter table t_content add column funcImage5 varchar(200) comment '详情图片5' DEFAULT '';
 drop TABLE IF EXISTS t_system_setting;
 create table t_system_setting(
 id int primary key auto_increment comment '主键id',

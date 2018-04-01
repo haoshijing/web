@@ -9,6 +9,7 @@ import com.hubei.web.admin.controller.request.ContentQueryVo;
 import com.hubei.web.admin.controller.response.ContentVo;
 import com.hubei.web.admin.service.ContentService;
 import com.hubei.web.admin.util.FileUtil;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -51,9 +52,19 @@ public class ContentController {
         List<ContentPo> contentPos = contentMapper.selectList(queryPo);
         List<ContentVo> contentVos = contentPos.stream().map(contentPo -> {
             ContentVo contentVo = new ContentVo();
-            StringBuilder sb = new StringBuilder();
-            sb.append(imageHost).append("/").append(contentPo.getImage());
-            contentVo.setImage(sb.toString());
+
+            contentVo.setImage(buildImage(contentPo.getImage()));
+            contentVo.setDetailImage2(buildImage(contentPo.getDetailImage2()));
+            contentVo.setDetailImage3(buildImage(contentPo.getDetailImage3()));
+            contentVo.setDetailImage4(buildImage(contentPo.getDetailImage4()));
+            contentVo.setDetailImage5(buildImage(contentPo.getDetailImage5()));
+            contentVo.setFuncImage1(buildImage(contentPo.getFuncImage1()));
+            contentVo.setFuncImage2(buildImage(contentPo.getFuncImage2()));
+            contentVo.setFuncImage3(buildImage(contentPo.getFuncImage3()));
+            contentVo.setFuncImage4(buildImage(contentPo.getFuncImage4()));
+            contentVo.setFuncImage5(buildImage(contentPo.getFuncImage5()));
+
+
             MenuPo menuPo =menuMapper.selectById(contentPo.getMenuId());
             if(menuPo != null){
                 contentVo.setMenuName(menuPo.getMenuName());
@@ -111,4 +122,71 @@ public class ContentController {
         return new ApiResponse<>(newFileName);
     }
 
+
+    @RequestMapping("/uploadFuncImage5")
+    public ApiResponse<String> uploadFuncImage5(MultipartFile funcImage5){
+       return doUpdateImage(funcImage5);
+    }
+    @RequestMapping("/uploadFuncImage4")
+    public ApiResponse<String> uploadFuncImage4(MultipartFile funcImage4){
+        return doUpdateImage(funcImage4);
+    }
+    @RequestMapping("/uploadFuncImage3")
+    public ApiResponse<String> uploadFuncImage3(MultipartFile funcImage3){
+        return doUpdateImage(funcImage3);
+    }
+    @RequestMapping("/uploadFuncImage2")
+    public ApiResponse<String> uploadFuncImage2(MultipartFile funcImage2){
+        return doUpdateImage(funcImage2);
+    }
+    @RequestMapping("/uploadFuncImage1")
+    public ApiResponse<String> uploadFuncImage1(MultipartFile funcImage1){
+        return doUpdateImage(funcImage1);
+    }
+
+    @RequestMapping("/uploadDetailImage1")
+    public ApiResponse<String> uploadDetailImage1(MultipartFile detailImage1){
+        return doUpdateImage(detailImage1);
+    }
+    @RequestMapping("/uploadDetailImage2")
+    public ApiResponse<String> uploadDetailImage2(MultipartFile detailImage2){
+        return doUpdateImage(detailImage2);
+    }
+    @RequestMapping("/uploadDetailImage3")
+    public ApiResponse<String> uploadDetailImage3(MultipartFile detailImage3){
+        return doUpdateImage(detailImage3);
+    }
+    @RequestMapping("/uploadDetailImage4")
+    public ApiResponse<String> uploadDetailImage4(MultipartFile detailImage4){
+        return doUpdateImage(detailImage4);
+    }
+    @RequestMapping("/uploadDetailImage5")
+    public ApiResponse<String> uploadDetailImage5(MultipartFile detailImage5){
+        return doUpdateImage(detailImage5);
+    }
+
+
+
+    private ApiResponse<String> doUpdateImage(MultipartFile image){
+        String fileName = image.getOriginalFilename();
+        int suffixIdx = fileName.lastIndexOf(".");
+        String fileSuffix = fileName.substring(suffixIdx+1);
+        String uuidName = UUID.randomUUID().toString().replace("-","");
+        String newFileName = new StringBuilder(uuidName).append(".").append(fileSuffix).toString();
+        try {
+            FileUtil.uploadFile(image.getBytes(), filePath, newFileName);
+        }catch (Exception e){
+
+        }
+        return new ApiResponse<>(newFileName);
+    }
+
+    private String buildImage(String image){
+        if(StringUtils.isNotEmpty(image)) {
+            StringBuilder sb = new StringBuilder();
+            sb.append(imageHost).append("/").append(image);
+            return sb.toString();
+        }
+        return "";
+    }
 }

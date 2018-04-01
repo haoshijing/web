@@ -8,6 +8,7 @@ import com.hubei.base.po.MenuPo;
 import com.hubei.web.portal.vo.ContentDataVo;
 import com.hubei.web.portal.vo.ContentDetailVo;
 import com.hubei.web.portal.vo.MoreContentDataVo;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -109,17 +110,20 @@ public class IndexService {
     public ContentDetailVo contentDetail(Integer id) {
         ContentDetailVo contentDetailVo = new ContentDetailVo();
         ContentPo contentPo = contentMapper.selectById(id);
-        BeanUtils.copyProperties(contentPo,contentDetailVo);
-        contentPo.setDetailImage1(buildImage(contentPo.getDetailImage1()));
-        contentPo.setDetailImage2(buildImage(contentPo.getDetailImage2()));
-        contentPo.setDetailImage3(buildImage(contentPo.getDetailImage3()));
-        contentPo.setDetailImage4(buildImage(contentPo.getDetailImage4()));
-        contentPo.setDetailImage5(buildImage(contentPo.getDetailImage5()));
-        contentPo.setFuncImage1(buildImage(contentPo.getFuncImage1()));
-        contentPo.setFuncImage2(buildImage(contentPo.getFuncImage2()));
-        contentPo.setFuncImage3(buildImage(contentPo.getFuncImage3()));
-        contentPo.setFuncImage4(buildImage(contentPo.getFuncImage4()));
-        contentPo.setFuncImage5(buildImage(contentPo.getFuncImage5()));
+        contentDetailVo.setId(contentPo.getId());
+        contentDetailVo.setAdminUrl(contentPo.getAdminUrl());
+        contentDetailVo.setName(contentPo.getName());
+        contentDetailVo.setImage(buildImage(contentDetailVo.getImage()));
+        contentDetailVo.setDetailImage1(buildImage(contentPo.getDetailImage1()));
+        contentDetailVo.setDetailImage2(buildImage(contentPo.getDetailImage2()));
+        contentDetailVo.setDetailImage3(buildImage(contentPo.getDetailImage3()));
+        contentDetailVo.setDetailImage4(buildImage(contentPo.getDetailImage4()));
+        contentDetailVo.setDetailImage5(buildImage(contentPo.getDetailImage5()));
+        contentDetailVo.setFuncImage1(buildImage(contentPo.getFuncImage1()));
+        contentDetailVo.setFuncImage2(buildImage(contentPo.getFuncImage2()));
+        contentDetailVo.setFuncImage3(buildImage(contentPo.getFuncImage3()));
+        contentDetailVo.setFuncImage4(buildImage(contentPo.getFuncImage4()));
+        contentDetailVo.setFuncImage5(buildImage(contentPo.getFuncImage5()));
         return contentDetailVo;
     }
 
@@ -137,7 +141,7 @@ public class IndexService {
         return  contentVos;
     }
     private String buildImage(String image){
-        if(image != null){
+        if(StringUtils.isNotEmpty(image)){
             StringBuilder sb = new StringBuilder();
             sb.append(imageHost).append("/").append(image);
             return  sb.toString();

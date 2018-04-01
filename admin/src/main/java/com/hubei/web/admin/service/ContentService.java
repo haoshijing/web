@@ -22,6 +22,16 @@ public class ContentService {
         contentPo.setUrl(request.getUrl());
         contentPo.setSort(request.getSort());
         contentPo.setImage(request.getImage());
+        contentPo.setDetailImage5(request.getDetailImage5());
+        contentPo.setDetailImage4(request.getDetailImage4());
+        contentPo.setDetailImage3(request.getDetailImage3());
+        contentPo.setDetailImage2(request.getDetailImage2());
+        contentPo.setDetailImage1(request.getDetailImage1());
+        contentPo.setFuncImage5(request.getFuncImage5());
+        contentPo.setFuncImage4(request.getFuncImage4());
+        contentPo.setFuncImage3(request.getFuncImage3());
+        contentPo.setFuncImage2(request.getFuncImage2());
+        contentPo.setFuncImage1(request.getFuncImage1());
         contentPo.setStatus(Status.OK.getCode());
         ret = contentMapper.insert(contentPo);
         return ret;
@@ -32,6 +42,36 @@ public class ContentService {
         if(StringUtils.isNotEmpty(request.getImage())){
             updatePo.setImage(request.getImage());
         }
+        if(StringUtils.isNotEmpty(request.getDetailImage1())){
+            updatePo.setDetailImage1(request.getDetailImage1());
+        }
+        if(StringUtils.isNotEmpty(request.getDetailImage2())){
+            updatePo.setDetailImage2(request.getDetailImage2());
+        }
+        if(StringUtils.isNotEmpty(request.getDetailImage3())){
+            updatePo.setDetailImage3(request.getDetailImage3());
+        }
+        if(StringUtils.isNotEmpty(request.getDetailImage4())){
+            updatePo.setDetailImage4(request.getDetailImage3());
+        }
+        if(StringUtils.isNotEmpty(request.getDetailImage5())){
+            updatePo.setDetailImage5(request.getDetailImage5());
+        }
+        if(StringUtils.isNotEmpty(request.getFuncImage1())){
+            updatePo.setFuncImage1(request.getFuncImage1());
+        }
+        if(StringUtils.isNotEmpty(request.getFuncImage2())){
+            updatePo.setFuncImage2(request.getFuncImage2());
+        }
+        if(StringUtils.isNotEmpty(request.getFuncImage3())){
+            updatePo.setFuncImage3(request.getFuncImage3());
+        }
+        if(StringUtils.isNotEmpty(request.getFuncImage4())){
+            updatePo.setFuncImage4(request.getFuncImage4());
+        }
+        if(StringUtils.isNotEmpty(request.getFuncImage5())){
+            updatePo.setFuncImage5(request.getFuncImage5());
+        }
 
         if(StringUtils.isNotEmpty(request.getName())){
             updatePo.setName(request.getName());
@@ -40,7 +80,7 @@ public class ContentService {
         if(StringUtils.isNotEmpty(request.getUrl())){
             updatePo.setUrl(request.getUrl());
         }
-
+        updatePo.setLastUpdateTime(System.currentTimeMillis());
         updatePo.setSort(request.getSort());
         updatePo.setMenuId(request.getMenuId());
         updatePo.setId(request.getId());

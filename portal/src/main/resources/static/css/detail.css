@@ -41,7 +41,7 @@ header .box .wechat i {
 	margin: 3px 0 0 9px;
 	width: 9px;
 	height: 14px;
-	background: url(../Images/icons.png) no-repeat top right;
+	background: url(../mages/icons.png) no-repeat top right;
 }
 header .box nav {
 	float: right;
@@ -231,7 +231,7 @@ section.content.active {
 	margin-top: 66px;
 	width: 44px;
 	height: 44px;
-	background: url(../Images/icons.png) no-repeat 0px -168px;
+	background: url(../images/icons.png) no-repeat 0px -168px;
 }
 .caselist ul.items li p {
 	position: absolute;
@@ -337,7 +337,7 @@ section.content.active {
 	margin: 40px 0 20px 60px;
 	padding-left: 20px;
 	font-size: 22px;
-	background: url(../Images/icons.png) no-repeat 0px -471px;
+	background: url(../images/icons.png) no-repeat 0px -471px;
 }
 .caseshow .words {
 	margin: 0 80px 0 60px;
