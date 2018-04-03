@@ -114,9 +114,15 @@
     }
 </style>
 <!--Header Start-->
-
+<link rel="stylesheet" href="${request.contextPath}/css/animate.css">
+<link rel="stylesheet" href="${request.contextPath}/js/video-js.css">
+<link rel="stylesheet" href="${request.contextPath}/css/template-css.css">
+<link rel="stylesheet" href="${request.contextPath}/css/css.css">
+<script type="text/javascript" src="${request.contextPath}/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="${request.contextPath}/js/video.js"></script>
 <script type="text/javascript" src="${request.contextPath}/js/jquery.cityselect.js"></script>
 <script type="text/javascript" src="${request.contextPath}/js/ip.js"></script>
+<script type="text/javascript" src="${request.contextPath}/js/jquery.js"></script>
 
 <div class="t1">
     <dl>
@@ -129,6 +135,38 @@
     </dl>
 </div>
 
+<section id="intro" class="home-video text-light">
+    <div class="home-video-wrapper">
+        <div class="homevideo-container">
+            <video id="bgvid" class="video-js" controls="" autoplay="autoplay" >
+                <source src="${request.contextPath}/startvideo.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="overlay">
+            <div class="text-center video-caption">
+                <div class="wow bounceInDown animated" data-wow-offset="0" data-wow-delay="0.8s" style="visibility: visible;-webkit-animation-delay: 0.8s; -moz-animation-delay: 0.8s; animation-delay: 0.8s;">
+                    <h1 class="big-heading font-light"><span id="js-rotating" class="morphext">
+                        	<span class="animated fadeInDown">天都国际-123.y0060.COM	</span>
+                            <span class=""> 专业的游戏开发团队</span>
+                            <span class=""> 真人视讯游戏开发</span><span class=""> API游戏对接 </span></span></h1>
+                </div>
+                <div class="wow bounceInUp animated" data-wow-offset="0" data-wow-delay="1s" style="visibility: visible;-webkit-animation-delay: 1s; -moz-animation-delay: 1s; animation-delay: 1s;">
+                    <div class="margintop-30">
+                        <a href="${request.contextPath}" class="btn btn-skin" id="btn-scroll">进入官网</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="t1">
+    <dl>
+        <dt style="width: 1260px;">欢迎访问 天恒博娱，致力打造更好的娱乐系统平台！  <a href="http://tdkj888.com/" target="_blank" style="color:blue;">点此进入合作伙伴真伪查询系统</a>  <a style="float:right;line-height: 44px;color: #009999;     font-size: 15px; ">合作伙伴真伪咨询QQ:765567899（此客服QQ不受理业务） </a></dt>
+
+
+    </dl>
+</div>
 
 <div class="headDiv">
     <div class="head">
@@ -244,4 +282,13 @@
 
 
 </body>
+<script type="text/javascript">
+    $(function(){
+        $("#btn-scroll").click(function(){
+            $("video#bgvid")[0].pause();
+            var t = $(window).scrollTop();
+            $('body,html').animate({'scrollTop':t+523},100)
+        });
+    })
+</script>
 </html>

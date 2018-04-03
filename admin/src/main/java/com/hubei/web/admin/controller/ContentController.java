@@ -63,7 +63,7 @@ public class ContentController {
             contentVo.setFuncImage3(buildImage(contentPo.getFuncImage3()));
             contentVo.setFuncImage4(buildImage(contentPo.getFuncImage4()));
             contentVo.setFuncImage5(buildImage(contentPo.getFuncImage5()));
-
+            contentVo.setAdminUrl(contentPo.getAdminUrl());
 
             MenuPo menuPo =menuMapper.selectById(contentPo.getMenuId());
             if(menuPo != null){

@@ -9,6 +9,7 @@ public class ContentInsertRequest {
     private Integer sort;
     private String image;
     private String url;
+    private String adminUrl;
     private Integer menuId;
     private Integer id;
     private String detailImage1;

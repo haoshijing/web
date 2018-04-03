@@ -20,6 +20,7 @@ public class ContentService {
         contentPo.setMenuId(request.getMenuId());
         contentPo.setName(request.getName());
         contentPo.setUrl(request.getUrl());
+        contentPo.setAdminUrl(request.getAdminUrl());
         contentPo.setSort(request.getSort());
         contentPo.setImage(request.getImage());
         contentPo.setDetailImage5(request.getDetailImage5());
@@ -80,6 +81,7 @@ public class ContentService {
         if(StringUtils.isNotEmpty(request.getUrl())){
             updatePo.setUrl(request.getUrl());
         }
+        updatePo.setAdminUrl(request.getAdminUrl());
         updatePo.setLastUpdateTime(System.currentTimeMillis());
         updatePo.setSort(request.getSort());
         updatePo.setMenuId(request.getMenuId());

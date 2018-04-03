@@ -917,81 +917,176 @@ background:#e1472f;overflow:hidden; cursor:pointer; border:none;}
 .foot-attr li h3 { font-size: 20px; font-weight: 500 }
 
 
+#intro.home-video { 
+	position: relative; 
+	margin: 0 auto; 
+	text-align: center;
+	height: 0;
+	padding-top: 20%;
+	padding-bottom: 30%;
+	position: relative;
+	overflow: hidden;
+	
+}
+#intro.home-video .homevideo-container { height: 100%; width: 100%; position: absolute; z-index: 1; background-size: cover; }
 
+#intro.home-video .overlay { 
+	position: relative; 
+	height: 100%; 
+	z-index: 2; 
+	padding: 20% 0;
 
+}
 
+#intro.home-video .home-video-wrapper {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	 background-color: #333333;
+}
 
+.bs-video {
+	height: 0;
+	padding-top: 25px;
+	padding-bottom: 67.5%;
+	margin-bottom: 10px;
+	position: relative;
+	overflow: hidden;
+}
+ 
+.bs-video.widescreen {
+	padding-bottom: 57.25%;
+}
+ 
+.bs-video.vimeo {
+	padding-top: 0;
+}
 
-/**
+.bs-video embed, .bs-video iframe, .bs-video object, .bs-video video {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
 
-.pop_city{width:795px;position:relative;z-index:2; clear:both; display:none;}
+.video-caption h1 {
+	text-transform: uppercase;
+}
+.bounceInUp {
+    -webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp;
+}
+video#bgvid { 
+	position: relative; right: 0; bottom: 0; 
+	min-width: 100%; min-height: 100%; 
+	width: auto; 
+	height: auto; 
+	z-index: -9999;
+	background-size:100% 100%;
+  }
+  .btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.btn {
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 14px;
+}
+.btn-skin {
+    color: #fff;
+    background-color: #c0983e;
+    border-color: #c0983e;
+}
+.margintop-30 {
+    margin-top: 30px !important;
+}
+.btn-skin:hover,
+.btn-skin:focus,
+.btn-skin:active,
+.btn-skin.active {
+  color: #fff;
+  background-color: #666;
+  border-color: #666;
+}
+.video-caption h1 {
+    text-transform: uppercase;
+}
+.big-heading {
+    font-size: 48px;
+    font-weight: 700;
+	color:#fff;
+}
+.morphext > span {
+	display: none;
+}
 
-.pop_city .pop_close{z-index:3;position:absolute;top:0px;right:0px;}
+.morphext > .animated {
+    display: inline-block;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
 
-.city_box{width:780px;margin-top:15px;float:left;background-color:#fff;}
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 
-.pop_city .pop_head{width:780px;height:120px;background-color:#f5f5f5;float:left;}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
 
-.pop_city .ct_logo{padding:25px 0px 0px 30px;float:left;}
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 
-.pop_city .ct_word{float:left;padding:74px 0px 0px 5px;font:400 16px/26px "微软雅黑";color:#434343;}
-
-.pop_city .ct_word span{padding:0px 20px 0px 5px;font:400 22px/26px "微软雅黑";color:#ff8a00;cursor:pointer;}
-
-.pop_city .ct_select{width:94px;height:22px;margin-right:6px;border: #91b821 1px solid; font-size:12px;}
-
-.pop_city .ct_word img{vertical-align: middle;*margin-bottom:5px;}
-
-.pop_city .ct_city{width:710px;float:left;padding:0px 35px;border-bottom:5px solid #f5f5f5;}
-
-.pop_city .ct_city dl{padding:20px 0px;width:710px;float:left;}
-
-.pop_city .ct_city dl dt{width:75px;float:left;font:400 14px/30px "微软雅黑";color:#3e3a39;}
-
-.pop_city .ct_city dl dd{float:left;overflow: hidden;zoom: 1;width:635px;}
-
-.pop_city .ct_city dl em{margin-right:15px;padding:0px;}
-
-.pop_city .ct_city dl em a{text-decoration:none;display:inline-block;font:400 14px/30px "微软雅黑";color:#ff8a00;}
-
-.pop_city .ct_city dl em a:hover{color:#91b821;text-decoration:none;}
-
-
-
-.pop_city .ct_provinces{width:710px;float:left;padding:0px 35px; padding-bottom:50px;}
-
-.pop_city .ct_provinces dl{width:710px;float:left;}
-
-.pop_city .ct_provinces dl dt{font:400 14px/35px "微软雅黑";color:#3e3a39;}
-
-.pop_city .ct_provinces dl dd{float:left;overflow: hidden;zoom: 1;}
-
-.pop_city .ct_provinces dl {}
-
-.pop_city .ct_provinces dl a{text-decoration:none;display:block;font:400 14px/20px "微软雅黑";color:#91b821;border:1px solid #91b821;width:22px;text-align:center; float:left;margin-right:8px;padding:0px;float:left;height:22px;}
-
-.pop_city .ct_provinces dl a:hover,.pop_city .ct_provinces dl a.on{text-decoration:none;color:#fff;border:1px solid #91b821; background-color:#91b821;}
-
-
-
-.pop_city .ct_tab{width:710px;float:left;background-color:#f5f5f5;padding:0px 30px;}
-
-.pop_city .ct_tab dl{width:740px;float:left;padding:10px;position:relative;z-index:2;}
-
-.pop_city .ct_tab dl dd{float:left;overflow: hidden;zoom: 1;}
-
-.pop_city .tab_icon{z-index:3;position:absolute;top:-12px;}
-
-.pop_city .ct_tab dl em{margin-right:15px;padding:0px;display:none;}
-
-.pop_city .ct_tab dl em a{text-decoration:none;display:inline-block;font:400 14px/30px "微软雅黑";color:#ff8a00;}
-
-.pop_city .ct_tab dl em a:hover{color:#91b821;text-decoration:none;}
-
-.pop_city .ct_tab dl .ct_point{z-index:3;position:absolute;top:5px;font:400 12px/18px "微软雅黑";color:#3e3a39;background-color:#fff;border:1px solid #9bbe36;padding:0px 3px;}
-
-#forAppendCity dd a { display:block; float:left; border:none; width: auto; height:22px; line-height:22px;padding:0 5px; text-decoration:none;display:inline-block;font:400 14px/30px "微软雅黑";color:#ff8a00;}
-
-#forAppendCity dd a:hover { background:none; color:#91B821}
-
-**/
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
