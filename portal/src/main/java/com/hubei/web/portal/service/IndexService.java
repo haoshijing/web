@@ -111,6 +111,7 @@ public class IndexService {
         ContentDetailVo contentDetailVo = new ContentDetailVo();
         ContentPo contentPo = contentMapper.selectById(id);
         contentDetailVo.setId(contentPo.getId());
+        contentDetailVo.setUrl(contentPo.getUrl());
         contentDetailVo.setAdminUrl(contentPo.getAdminUrl());
         contentDetailVo.setName(contentPo.getName());
         contentDetailVo.setImage(buildImage(contentDetailVo.getImage()));
