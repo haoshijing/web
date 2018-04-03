@@ -20,13 +20,19 @@ public class IndexController {
 
     @RequestMapping("/")
     public ModelAndView indexWel(ModelAndView modelAndView){
-        return  index(modelAndView);
+        modelAndView.setViewName("index");
+        ContentDataVo contentDataVo =  indexService.obtainIndexData(null);
+        modelAndView.addObject("contentDataVo",contentDataVo);
+        modelAndView.addObject("showVideo",true);
+        return  modelAndView;
     }
-    @RequestMapping("/index")
+
+    @RequestMapping(value = {"/index","/m"})
     public ModelAndView index(ModelAndView modelAndView){
         modelAndView.setViewName("index");
         ContentDataVo contentDataVo =  indexService.obtainIndexData(null);
         modelAndView.addObject("contentDataVo",contentDataVo);
+        modelAndView.addObject("showVideo",false);
         return  modelAndView;
    }
 
