@@ -18,7 +18,10 @@ public class IndexController {
     @Autowired
     private IndexService indexService;
 
-
+    @RequestMapping("/")
+    public ModelAndView indexWel(ModelAndView modelAndView){
+        return  index(modelAndView);
+    }
     @RequestMapping("/index")
     public ModelAndView index(ModelAndView modelAndView){
         modelAndView.setViewName("index");
