@@ -56,6 +56,7 @@ public class IndexController {
     public ModelAndView index(Integer menuId,ModelAndView modelAndView){
         modelAndView.setViewName("index");
         ContentDataVo contentDataVo =  indexService.obtainIndexData(menuId);
+        modelAndView.addObject("showVideo",false);
         modelAndView.addObject("contentDataVo",contentDataVo);
         return  modelAndView;
     }
