@@ -29,7 +29,7 @@ Primary style
 	position: absolute;
 	bottom: 3px;
 	width: 100.1%;
-	background-image: url(images/abg-d.png);
+	background-image: url(../images/abg-d.png);
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: 106.3%;
@@ -385,7 +385,7 @@ Primary style
 	content: "";
 	width: 100%;
 	height: 100%;
-	background-image: url(images/abg-t.png);
+	background-image: url(../images/abg-t.png);
 	background-repeat: no-repeat;
 	background-position: top right;
 	position: absolute;
@@ -458,7 +458,7 @@ Primary style
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.3) url(images/cd-icon-close.svg) no-repeat center center;
+  background: rgba(0, 0, 0, 0.3) url(../images/cd-icon-close.svg) no-repeat center center;
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
@@ -556,7 +556,7 @@ Primary style
 .pswp__button,
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {
-  background: url(images/default-skin.png) 0 0 no-repeat;
+  background: url(../images/default-skin.png) 0 0 no-repeat;
   background-size: 264px 88px;
   width: 44px;
   height: 44px; }

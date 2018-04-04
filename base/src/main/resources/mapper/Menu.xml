@@ -47,7 +47,7 @@
         select <include refid="all_columns"/>
         FROM <include refid="tableName"/>
         <where>
-            Status = 1
+            status = 1
             <include refid="queryWhere"/>
         </where>
     </select>
@@ -55,13 +55,14 @@
         select count(1)
         FROM <include refid="tableName"/>
         <where>
-            Status = 1
+            status = 1
             <include refid="queryWhere"/>
         </where>
     </select>
 
     <select id="queryMenuListForContent" resultType="MenuPo">
         select id  ,parentId , menuName from t_menu where parentId   <![CDATA[ <> 0   ]]>
+        and status = 1
     </select>
 
 
