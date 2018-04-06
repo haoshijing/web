@@ -208,7 +208,7 @@ dt{font-weight: normal}
 .menu-dropdown {
   min-width: 100%;
   position: absolute;
-  background: #0076db;
+  background: #4f505a;
   z-index: 100;
   transition: 0.5s padding, 0.5s background;
 }
@@ -326,7 +326,7 @@ dt{font-weight: normal}
 
 .head .logoText1,.head .logoText2,.head .logoText3 {WIDTH: 240px; DISPLAY: inline-block; COLOR: #666; VERTICAL-ALIGN: top; margin-top:15px;}.head .logoText3{ margin-right:100px;}
 
-.head .logoText1:hover .red,.head .logoText2:hover .red,.head .logoText3:hover .red {COLOR: #0076db}
+.head .logoText1:hover .red,.head .logoText2:hover .red,.head .logoText3:hover .red {COLOR: #4f505a}
 
 .head .logoText1 DL .red,.head .logoText2 DL .red,.head .logoText3 DL .red {FONT-SIZE: 15px; PADDING-TOP: 12px}
 
@@ -352,9 +352,9 @@ dt{font-weight: normal}
 
 
 
-.navbg { background:#0076db; width:100%; min-width:1280px;}
+.navbg { background:#4f505a; width:100%; min-width:1280px;}
 
-.nav{width:1280px; height:60px; line-height:60px; background:#0076db; margin:0 auto;}
+.nav{width:1280px; height:60px; line-height:60px; background:#4f505a; margin:0 auto;}
 
 .nav li{float: left;text-align: center;font-size: 15px;color: #fff;height: 60px;}
 
@@ -750,7 +750,7 @@ background:#e1472f;overflow:hidden; cursor:pointer; border:none;}
 
 .netit a {color:#333; line-height:40px;}
 
-.netit a:hover{ color:#0076db;}
+.netit a:hover{ color:#4f505a;}
 
 .necon{ width:1250px; padding:10px; height:55px; line-height:30px; overflow:hidden;  font-size:14px; color:#888; font-family:"宋体"; margin-bottom:10px;}
 
@@ -794,7 +794,7 @@ background:#e1472f;overflow:hidden; cursor:pointer; border:none;}
 
 .wbynews_list li a{color:#333; width:75%; overflow:hidden; line-height:35px; height:35px;display:block; font-size:14px;}
 
-.wbynews_list li a:hover{color:#0076db;}
+.wbynews_list li a:hover{color:#4f505a;}
 
 .wbynews_list span{float:right;}
 
