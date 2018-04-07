@@ -359,7 +359,7 @@ dt{font-weight: normal}
 .nav li{float: left;text-align: center;font-size: 15px;color: #fff;height: 60px;}
 
 .nav li a { color:#fff; font-size:16px; padding:0 25px; display:block;line-height:60px;text-align:center;}
-.nav li a:hover,.nav li.on { background:#06F;}
+.nav li a:hover,.nav li.on { background:#4f505a;}
 .menu-dropdown li{ float:none;}
 
 #buoy{position: absolute;width: 115px;height: 3px;overflow: hidden;background: #0896de;top: 0;left: 0;}
@@ -868,9 +868,9 @@ background:#e1472f;overflow:hidden; cursor:pointer; border:none;}
 
 
 
-.footer_03new { width: 100%; min-width: 1280px; height: 60px; line-height: 60px; text-align: center; margin: 0 auto; background:#006de3;font-size:14px; }
+.footer_03new { width: 100%; min-width: 1280px; height: 60px; line-height: 60px; text-align: center; margin: 0 auto; background:#4f505a;;font-size:14px; }
 
-.wbyfooter_03 { width: 100%; min-width: 1280px; height: 60px; line-height: 60px; text-align: center; margin: 0 auto; background: #006de3; font-size: 14px; }
+.wbyfooter_03 { width: 100%; min-width: 1280px; height: 60px; line-height: 60px; text-align: center; margin: 0 auto; background: #4f505a;; font-size: 14px; }
 
 .borrinew { border-right: 1px solid #5c6a95; padding-right: 90px; }
 
