@@ -91,10 +91,15 @@ public class MenuService {
             ContentMenuVo contentMenuVo = new ContentMenuVo();
             contentMenuVo.setMenuId(menuPo.getId());
             MenuPo parentPo = menuMapper.selectById(menuPo.getParentId());
+            if(parentPo == null){
+                return  null;
+            }
             StringBuilder sb = new StringBuilder("(").append(parentPo.getMenuName())
             .append(")").append(menuPo.getMenuName());
             contentMenuVo.setMenuName(sb.toString());
             return contentMenuVo;
+        }).filter(contentMenuVo -> {
+            return contentMenuVo != null;
         }).collect(Collectors.toList());
         return  contentMenuVos;
     }
