@@ -61,8 +61,8 @@ public class IndexService {
             if(menuId == null){
                 menuId = menuPoList.get(0).getId();
             }
-
             MenuPo menuPo = menuMapper.selectById(menuId);
+
             final  Integer cmpMenuId = menuId;
             List<ContentDataVo.MenuVo> subMenuVos;
             if(menuPo.getParentId() == 0){
