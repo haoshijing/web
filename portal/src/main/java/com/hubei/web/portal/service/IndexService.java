@@ -79,7 +79,7 @@ public class IndexService {
 
                 ContentPo queryContentPo = new ContentPo();
                 queryContentPo.setMenuId(menuId);
-                queryContentPo.setLimit(10);
+                queryContentPo.setLimit(200);
                 List<ContentPo> contentPos = contentMapper.selectList(queryContentPo);
                 contentListVo.setContentVos(buildFromContentPos(contentPos));
                 contentDataVo.setContentListVos(Lists.newArrayList(contentListVo));

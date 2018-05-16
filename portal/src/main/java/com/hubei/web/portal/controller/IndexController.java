@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+
 @Controller
 @Slf4j
 public class IndexController {
@@ -19,7 +21,7 @@ public class IndexController {
     private IndexService indexService;
 
     @RequestMapping("/")
-    public ModelAndView indexWel(ModelAndView modelAndView){
+    public ModelAndView indexWel(ModelAndView modelAndView, HttpServletRequest request){
         modelAndView.setViewName("index");
         ContentDataVo contentDataVo =  indexService.obtainIndexData(null);
         modelAndView.addObject("contentDataVo",contentDataVo);
